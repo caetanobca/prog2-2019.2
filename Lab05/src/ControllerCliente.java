@@ -40,21 +40,26 @@ public class ControllerCliente {
             result += this.clientes.get(cpf).toString() + " | ";
 
         }
-        return result.substring(0, result.length() - 3);
+        if (result.equals("")){
+            result = "Nenhum cliente cadastrado";
+        }else {
+            result = result.substring(0, result.length() - 3);
+        }
+        return result;
     }
 
-    public void editarCliente(String cpf, String opcao, String mundanca) {
+    public void editarCliente(String cpf, String opcao, String novoValor) {
         this.validadorString.validaString(cpf);
-        this.validadorString.validaString(mundanca);
+        this.validadorString.validaString(novoValor);
         this.validadorString.validaString(opcao);
 
         if (this.clientes.containsKey(cpf)){
             if (opcao.toUpperCase().equals("NOME")){
-                this.clientes.get(cpf).setNome(mundanca);
+                this.clientes.get(cpf).setNome(novoValor);
             }else if (opcao.toUpperCase().equals("EMAIL")){
-                this.clientes.get(cpf).setEmail(mundanca);
+                this.clientes.get(cpf).setEmail(novoValor);
             }else if (opcao.toUpperCase().equals("LOCALIZACAO")){
-                this.clientes.get(cpf).setLocalizacao(mundanca);
+                this.clientes.get(cpf).setLocalizacao(novoValor);
             }else {
                 throw new IllegalArgumentException("Opcao invalida");
             }
