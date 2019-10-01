@@ -54,16 +54,23 @@ class FornecedorTest {
         this.fornecedor1.cadastraProduto("Tapioca", "tapioca com queijo", 2.75);
         assertEquals("Tapioca - tapioca com queijo - R$2,75", this.fornecedor1.listarProdutos());
 
-        this.fornecedor1.cadastraProduto("Tapioca G", "tapioca com queijo", 5.00);
         this.fornecedor1.cadastraProduto("Bala", "bala de menta", 0.15);
 
-        assertEquals("Tapioca - tapioca com queijo - R$2,75 | Tapioca G - tapioca com queijo - R$5,00" +
+        assertEquals("Tapioca - tapioca com queijo - R$2,75" +
                 " | Bala - bala de menta - R$0,15", this.fornecedor1.listarProdutos());
 
     }
 
     @Test
     void listarProdutosComNome() {
+        this.fornecedor1.cadastraProduto("Tapioca", "tapioca com queijo", 2.75);
+        assertEquals("Dona Ines - Tapioca - tapioca com queijo - R$2,75", this.fornecedor1.listarProdutosComNome());
+
+        this.fornecedor1.cadastraProduto("Bala", "bala de menta", 0.15);
+
+        assertEquals("Dona Ines - Tapioca - tapioca com queijo - R$2,75" +
+                " | Dona Ines - Bala - bala de menta - R$0,15", this.fornecedor1.listarProdutosComNome());
+
     }
 
     @Test
@@ -79,14 +86,21 @@ class FornecedorTest {
 
     @Test
     void removeProduto() {
-        
+        this.fornecedor1.cadastraProduto("Tapioca", "tapioca com queijo", 2.75);
+        this.fornecedor1.cadastraProduto("Bala", "bala de menta", 0.10);
+        assertEquals("Tapioca - tapioca com queijo - R$2,75" +
+                " | Bala - bala de menta - R$0,10", this.fornecedor1.listarProdutos());
+
+        this.fornecedor1.removeProduto("Bala", "bala de menta");
+        assertEquals("Tapioca - tapioca com queijo - R$2,75", this.fornecedor1.listarProdutos());
     }
 
     @Test
     void equals1() {
+        assertFalse(this.fornecedor1.equals(new Fornecedor("Dona Inalda", "inaldinha@gmail.com", "83 99574-2021")));
+        assertFalse(this.fornecedor1.equals(new Fornecedor("Dona Inesvalda", "dona.ines@cantina.ufcg.br", "83 99415-6421")));
+        assertTrue(this.fornecedor1.equals(new Fornecedor("Dona Ines", "ines@gmail.com", "83 98814-2034")));
     }
 
-    @Test
-    void hashCode1() {
-    }
+
 }

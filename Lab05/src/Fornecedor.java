@@ -61,11 +61,21 @@ public class Fornecedor {
         this.telefone = telefone;
     }
 
+    /**
+     * Metodo que retorna uma representacao de um fornecedor
+     * @return representacao do fornecedor no formato <NOME - EMAIL - TELEFONE></NOME>
+     */
     @Override
     public String toString() {
         return this.nome + " - " + this.email + " - " + this.telefone;
     }
 
+    /**
+     * Metodo que cadastra um produto
+     * @param nomeProduto - nome do produto, que junto a sua descricao e o indentificador unico do produto
+     * @param descricao - descricao do produto, que junto a seu nome e o indentificador unico do produto
+     * @param preco -preco do produto
+     */
     public void cadastraProduto(String nomeProduto, String descricao, double preco) {
         this.validadorString.validaString(nomeProduto);
         this.validadorString.validaString(descricao);
@@ -78,6 +88,12 @@ public class Fornecedor {
         }
     }
 
+    /**
+     * Retorna uma representacao de um produto.
+     * @param nomeProduto - nome do produto, que junto a sua descricao e o indentificador unico do produto
+     * @param descricao - descricao do produto, que junto a seu nome e o indentificador unico do produto
+     * @return uma representacao textual de um produto
+     */
     public String exibeProduto(String nomeProduto, String descricao) {
         this.validadorString.validaString(nomeProduto);
         this.validadorString.validaString(descricao);
@@ -92,6 +108,10 @@ public class Fornecedor {
         return result;
     }
 
+    /**
+     * Retorna uma string que lista todos os produtos que estao cadastrados no fornecedores
+     * @return uma lista com todos os produtos cadastrados no fornecedor
+     */
     public String listarProdutos() {
         String result = "";
 

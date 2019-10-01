@@ -8,6 +8,8 @@ public class Cliente {
     private Validacao validadorString;
 
     public Cliente (String cpf, String nome, String email, String localizacao){
+        this.validadorString = new Validacao();
+
         this.validadorString.validaString(cpf);
         this.validadorString.validaString(nome);
         this.validadorString.validaString(email);

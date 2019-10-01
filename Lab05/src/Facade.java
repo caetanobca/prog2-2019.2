@@ -8,7 +8,7 @@ public class Facade {
         this.controllerFornecedor = new ControllerFornecedor();
     }
 
-    public String cadastraCliente (String nome, String cpf, String email, String localizacao){
+    public String adicionaCliente(String cpf, String nome, String email, String localizacao){
         return this.controllerCliente.cadastraCliente(cpf, nome, email, localizacao);
     }
 
@@ -20,7 +20,7 @@ public class Facade {
         return this.controllerCliente.listarClientes();
     }
 
-    public void editarCliente (String cpf, String opcao, String novoValor){
+    public void editaCliente(String cpf, String opcao, String novoValor){
         this.controllerCliente.editarCliente(cpf, opcao, novoValor);
     }
 
