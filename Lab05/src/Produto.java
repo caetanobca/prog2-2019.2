@@ -9,6 +9,7 @@ public class Produto {
     private Validacao validadorString;
 
     public Produto(String nome, String descricao, double preco) {
+        this.validadorString = new Validacao();
         this.validadorString.validaString(nome);
         this.validadorString.validaString(descricao);
 
@@ -19,7 +20,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return this.nome + " - " + this.descricao + " - R$" + preco;
+        return this.nome + " - " + this.descricao + " - R$" + String.format("%.2f",this.preco);
     }
 
     public void setPreco(double preco) {

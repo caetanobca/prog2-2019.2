@@ -36,6 +36,8 @@ public class Fornecedor {
      * @param telefone - telefone do fornecedor
      */
     public Fornecedor(String nome, String email, String telefone) {
+        this.validadorString = new Validacao();
+
         this.validadorString.validaString(nome);
         this.validadorString.validaString(email);
         this.validadorString.validaString(telefone);
@@ -43,6 +45,7 @@ public class Fornecedor {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
+        this.produtos = new HashMap<>();
     }
 
 
@@ -67,10 +70,11 @@ public class Fornecedor {
         this.validadorString.validaString(nomeProduto);
         this.validadorString.validaString(descricao);
 
-        if (this.produtos.containsKey(nomeProduto)){
+        if (this.produtos.containsKey(nomeProduto)) {
             throw new IllegalArgumentException("Produto ja cadastrado");
-        }else {
-            this.produtos.put( (nomeProduto + descricao), new Produto(nomeProduto, descricao, preco));
+        } else {
+            this.produtos.put((nomeProduto + descricao), new Produto(nomeProduto, descricao, preco));
+
         }
     }
 
@@ -90,13 +94,13 @@ public class Fornecedor {
 
     public String listarProdutos() {
         String result = "";
-        for (String nomeProduto : this.produtos.keySet()){
-            result += this.produtos.get(nomeProduto).toString() + " | ";
 
+        for (String nomeProduto : this.produtos.keySet()) {
+            result += this.produtos.get(nomeProduto).toString() + " | ";
         }
-        if (result.equals("")){
+        if (result.equals("")) {
             result = "Nenhum produto cadastrado pelo fornecedor: " + this.nome;
-        }else {
+        } else {
             result = result.substring(0, result.length() - 3);
         }
         return result;
@@ -118,7 +122,7 @@ public class Fornecedor {
         return result;
     }
 
-    public void editarProduto(String nomeProduto, String descricao, String nomeProduto1, double novoPreco) {
+    public void editarProduto(String nomeProduto, String descricao, double novoPreco) {
         this.validadorString.validaString(nomeProduto);
         this.validadorString.validaString(descricao);
 

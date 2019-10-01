@@ -200,7 +200,7 @@ public class ControllerFornecedor {
         this.validadorString.validaString(descricao);
 
         if (this.fornecedores.containsKey(fornecedor)){
-            this.fornecedores.get(fornecedor).editarProduto(nomeProduto, descricao, nomeProduto, novoPreco);
+            this.fornecedores.get(fornecedor).editarProduto(nomeProduto, descricao, novoPreco);
         }else {
             throw new IllegalArgumentException("Fornecedor nao cadastrado");
         }
