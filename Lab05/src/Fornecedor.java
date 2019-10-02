@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Objects;
 
+
 public class Fornecedor {
 
     /**
@@ -25,7 +26,7 @@ public class Fornecedor {
     private HashMap<String, Produto> produtos;
 
     /**
-     * Objeto que tem funcoes que permite saber se as strings sao validas
+     * Objeto que tem funcoes que permite saber se as entradas sao validas
      */
     private Validacao validadorString;
 
@@ -38,9 +39,9 @@ public class Fornecedor {
     public Fornecedor(String nome, String email, String telefone) {
         this.validadorString = new Validacao();
 
-        this.validadorString.validaString(nome);
-        this.validadorString.validaString(email);
-        this.validadorString.validaString(telefone);
+        this.validadorString.validaString(nome,"Erro no cadastro do fornecedor: nome nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(email, "Erro no cadastro do fornecedor: email nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(telefone, "Erro no cadastro do fornecedor: telefone nao pode ser vazio ou nulo.");
 
         this.nome = nome;
         this.email = email;
@@ -50,13 +51,13 @@ public class Fornecedor {
 
 
     public void setEmail(String email) {
-        this.validadorString.validaString(email);
+        this.validadorString.validaString(email, "Erro na edicao do fornecedor: novo valor nao pode ser vazio ou nulo.");
 
         this.email = email;
     }
 
     public void setTelefone(String telefone) {
-        this.validadorString.validaString(telefone);
+        this.validadorString.validaString(telefone, "Erro na edicao do fornecedor: novo valor nao pode ser vazio ou nulo.");
 
         this.telefone = telefone;
     }
@@ -77,11 +78,15 @@ public class Fornecedor {
      * @param preco -preco do produto
      */
     public void cadastraProduto(String nomeProduto, String descricao, double preco) {
-        this.validadorString.validaString(nomeProduto);
-        this.validadorString.validaString(descricao);
+        this.validadorString.validaString(nomeProduto, "Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricao, "Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
 
-        if (this.produtos.containsKey(nomeProduto)) {
-            throw new IllegalArgumentException("Produto ja cadastrado");
+        if (preco < 0){
+            throw new IllegalArgumentException("Erro no cadastro de produto: preco invalido.");
+        }
+
+        if (this.produtos.containsKey(nomeProduto + descricao)) {
+            throw new IllegalArgumentException("Erro no cadastro de produto: produto ja existe.");
         } else {
             this.produtos.put((nomeProduto + descricao), new Produto(nomeProduto, descricao, preco));
 
@@ -95,15 +100,15 @@ public class Fornecedor {
      * @return uma representacao textual de um produto
      */
     public String exibeProduto(String nomeProduto, String descricao) {
-        this.validadorString.validaString(nomeProduto);
-        this.validadorString.validaString(descricao);
+        this.validadorString.validaString(nomeProduto, "Erro na exibicao de produto: nome nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricao, "Erro na exibicao de produto: descricao nao pode ser vazia ou nula.");
 
         String result;
 
         if (this.produtos.containsKey(nomeProduto+descricao)){
             result = this.produtos.get(nomeProduto+descricao).toString();
         }else {
-            result = "Produto nao cadastrado";
+            throw new IllegalArgumentException("Erro na exibicao de produto: produto nao existe.");
         }
         return result;
     }
@@ -126,6 +131,10 @@ public class Fornecedor {
         return result;
     }
 
+    /**
+     * Faz uma listagem de todos os produtos desse fornecedor, antecipados do nome do produtor
+     * @return uma listagem de todos os produtos antecipados do nome do produtor
+     */
     public String listarProdutosComNome() {
         String result = "";
 
@@ -133,38 +142,55 @@ public class Fornecedor {
             result += this.nome + " - " + this.produtos.get(nomeProduto).toString() + " | ";
         }
 
-        if (result.equals("")){
-            result = "Nenhum produto cadastrado pelo fornecedor: " + this.nome;
-        }else {
+        if (!result.equals("")){
             result = result.substring(0, result.length() - 3);
         }
-
         return result;
     }
 
+    /**
+     * Esse metodo edita o preco de determinado produto
+     * @param nomeProduto - nome do produto, que junto a sua descricao forma o identificador unico do produto
+     * @param descricao - descricao do produto, que junto a seu nome forma o identificador unico do produto
+     * @param novoPreco - o novo preco do produto
+     */
     public void editarProduto(String nomeProduto, String descricao, double novoPreco) {
-        this.validadorString.validaString(nomeProduto);
-        this.validadorString.validaString(descricao);
+        this.validadorString.validaString(nomeProduto, "Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricao, "Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
+
+        if (novoPreco < 0){
+            throw new IllegalArgumentException("Erro na edicao de produto: preco invalido.");
+        }
 
         if (this.produtos.containsKey(nomeProduto + descricao)){
             this.produtos.get(nomeProduto + descricao).setPreco(novoPreco);
         }
         else {
-            throw new IllegalArgumentException("Produto nao cadastrado");
+            throw new IllegalArgumentException("Erro na edicao de produto: produto nao existe.");
         }
     }
 
+    /**
+     * Esse metodo remove um produto, do fornecedor
+     * @param nomeProduto - nome do produto, que junto a sua descricao forma o identificador unico do produto
+     * @param descricao - descricao do produto, que junto a seu nome forma o identificador unico do produto
+     */
     public void removeProduto(String nomeProduto, String descricao) {
-        this.validadorString.validaString(nomeProduto);
-        this.validadorString.validaString(descricao);
+        this.validadorString.validaString(nomeProduto, "Erro na remocao de produto: nome nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricao, "Erro na remocao de produto: descricao nao pode ser vazio ou nulo.");
 
         if (this.produtos.containsKey(nomeProduto + descricao)){
             this.produtos.remove(nomeProduto + descricao);
         }else {
-            throw new IllegalArgumentException("Produto ja nao estava cadastrado");
+            throw new IllegalArgumentException("Erro na remocao de produto: produto nao existe.");
         }
     }
 
+    /**
+     * Compare se outro objeto do mesmo tipo e igual a partir do nome do fornecedor
+     * @param o o objeto que sera comparado com o fornecedor em questao
+     * @return true caso o nome dos dois objetos forem o mesmo e false caso nao
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

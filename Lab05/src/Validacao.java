@@ -1,10 +1,12 @@
 public class Validacao {
 
-    public void validaString (String testa){
-        if (testa.trim().equals("")){
-            throw new IllegalArgumentException("String vazia ou composta apenas por espacos");
-        }else if (testa == null){
-            throw new NullPointerException("String nula");
+    public void validaString (String testa, String msg){
+
+        if (testa == null){
+            throw new NullPointerException(msg);
+        }else if (testa.trim().equals("")){
+            throw new IllegalArgumentException(msg);
         }
+
     }
 }

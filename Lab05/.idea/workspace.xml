@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a949bfdd-df67-43a3-af49-dab1fa25f771" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/easyaccept.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/FornecedorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/FornecedorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/ClienteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/ControllerClienteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/ControllerFornecedorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ControllerCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/ControllerCliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ControllerFornecedor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/ControllerFornecedor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Facade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/Facade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Fornecedor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/Fornecedor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/Produto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Validacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/Validacao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControllerCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControllerCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControllerFornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControllerFornecedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fornecedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validacao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,63 +27,67 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-196551067">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="10" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="10" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1244" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1244" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="146" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Facade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ControllerCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-194">
+              <caret line="89" column="74" lean-forward="true" selection-start-line="89" selection-start-column="74" selection-end-line="89" selection-end-column="74" />
+              <folding>
+                <element signature="docComment;field#clientes#0;class#ControllerCliente#0" />
+                <element signature="docComment;field#validadorString#0;class#ControllerCliente#0" />
+                <element signature="docComment;method#ControllerCliente#0;class#ControllerCliente#0" />
+                <element signature="method#ControllerCliente#0;class#ControllerCliente#0" />
+                <element signature="docComment;method#cadastraCliente#0;class#ControllerCliente#0" />
+                <element signature="method#cadastraCliente#0;class#ControllerCliente#0" />
+                <element signature="docComment;method#exibeCliente#0;class#ControllerCliente#0" />
+                <element signature="method#exibeCliente#0;class#ControllerCliente#0" />
+                <element signature="docComment;method#listarClientes#0;class#ControllerCliente#0" />
+                <element signature="method#listarClientes#0;class#ControllerCliente#0" />
+                <element signature="docComment;method#editarCliente#0;class#ControllerCliente#0" />
+                <element signature="docComment;method#removerCliente#0;class#ControllerCliente#0" />
+                <element signature="method#removerCliente#0;class#ControllerCliente#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ControllerFornecedor.java">
+        <entry file="file://$PROJECT_DIR$/Tests/ControllerClienteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2492">
-              <caret line="29" column="82" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
+            <state relative-caret-position="323">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+              <folding>
+                <element signature="method#setUp#0;class#ControllerClienteTest#0" />
+                <element signature="method#cadastraCliente#0;class#ControllerClienteTest#0" />
+                <element signature="method#exibeCliente#0;class#ControllerClienteTest#0" />
+                <element signature="method#listarClientes#0;class#ControllerClienteTest#0" />
+                <element signature="method#editarCliente#0;class#ControllerClienteTest#0" />
+                <element signature="method#removerCliente#0;class#ControllerClienteTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/ClienteTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+              <folding>
+                <element signature="method#setNome#0;class#ClienteTest#0" />
+                <element signature="method#setEmail#0;class#ClienteTest#0" />
+                <element signature="method#setLocalizacao#0;class#ClienteTest#0" />
+                <element signature="method#equals1#0;class#ClienteTest#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,88 +95,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Fornecedor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
+            <state relative-caret-position="245">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="34" selection-end-column="80" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setTelefone#0;class#Fornecedor#0" />
-                <element signature="docComment;method#toString#0;class#Fornecedor#0" />
-                <element signature="e#1647#1648#0" expanded="true" />
-                <element signature="e#1724#1725#0" expanded="true" />
-                <element signature="docComment;method#cadastraProduto#0;class#Fornecedor#0" />
-                <element signature="method#cadastraProduto#0;class#Fornecedor#0" />
-                <element signature="docComment;method#exibeProduto#0;class#Fornecedor#0" />
-                <element signature="method#exibeProduto#0;class#Fornecedor#0" />
-                <element signature="docComment;method#listarProdutos#0;class#Fornecedor#0" />
-                <element signature="method#listarProdutos#0;class#Fornecedor#0" />
-                <element signature="e#4958#4959#0" expanded="true" />
-                <element signature="e#4999#5000#0" expanded="true" />
+                <element signature="docComment;field#cpf#0;class#Cliente#0" />
+                <element signature="docComment;field#nome#0;class#Cliente#0" />
+                <element signature="docComment;field#email#0;class#Cliente#0" />
+                <element signature="docComment;field#localizacao#0;class#Cliente#0" />
+                <element signature="docComment;field#validadorString#0;class#Cliente#0" />
+                <element signature="method#Cliente#0;class#Cliente#0" />
+                <element signature="docComment;method#toString#0;class#Cliente#0" />
+                <element signature="docComment;method#setNome#0;class#Cliente#0" />
+                <element signature="docComment;method#setEmail#0;class#Cliente#0" />
+                <element signature="method#setEmail#0;class#Cliente#0" />
+                <element signature="docComment;method#setLocalizacao#0;class#Cliente#0" />
+                <element signature="method#setLocalizacao#0;class#Cliente#0" />
+                <element signature="docComment;method#equals#0;class#Cliente#0" />
+                <element signature="method#equals#0;class#Cliente#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="98" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Produto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/FornecedorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setEmail#0;class#FornecedorTest#0" />
-                <element signature="method#setTelefone#0;class#FornecedorTest#0" />
-                <element signature="method#cadastraProduto#0;class#FornecedorTest#0" />
-                <element signature="method#exibeProduto#0;class#FornecedorTest#0" />
-                <element signature="method#listarProdutos#0;class#FornecedorTest#0" />
-                <element signature="method#listarProdutosComNome#0;class#FornecedorTest#0" />
-                <element signature="method#editarProduto#0;class#FornecedorTest#0" />
-                <element signature="method#removeProduto#0;class#FornecedorTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/ProdutoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="39" selection-start-column="39" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -174,6 +123,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -183,19 +133,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cliente.java" />
         <option value="$PROJECT_DIR$/Tests/FornecedorTest.java" />
-        <option value="$PROJECT_DIR$/src/Fornecedor.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Validacao.java" />
+        <option value="$PROJECT_DIR$/src/Produto.java" />
+        <option value="$PROJECT_DIR$/src/ControllerFornecedor.java" />
+        <option value="$PROJECT_DIR$/src/Fornecedor.java" />
+        <option value="$PROJECT_DIR$/Tests/ControllerFornecedorTest.java" />
+        <option value="$PROJECT_DIR$/src/Cliente.java" />
+        <option value="$PROJECT_DIR$/Tests/ClienteTest.java" />
         <option value="$PROJECT_DIR$/src/Facade.java" />
+        <option value="$PROJECT_DIR$/src/ControllerCliente.java" />
+        <option value="$PROJECT_DIR$/Tests/ControllerClienteTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="286" />
-    <option name="y" value="27" />
-    <option name="width" value="1361" />
-    <option name="height" value="1001" />
+    <option name="x" value="70" />
+    <option name="y" value="-27" />
+    <option name="width" value="1371" />
+    <option name="height" value="1002" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -226,23 +183,53 @@
               <item name="Lab05" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Lab05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
+          <expand>
+            <path>
+              <item name="Lab05" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Lab05" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Lab05" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Lab05" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="Tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569934629579" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/easyaccept.jar!/" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -256,66 +243,71 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Lab05" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FornecedorTest.equals1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ControllerClienteTest.editarCliente">
+    <configuration name="ControllerClienteTest.cadastraCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab05" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FornecedorTest" />
-      <option name="METHOD_NAME" value="equals1" />
+      <option name="MAIN_CLASS_NAME" value="ControllerClienteTest" />
+      <option name="METHOD_NAME" value="cadastraCliente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FornecedorTest.listarProdutosComNome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerClienteTest.editarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab05" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FornecedorTest" />
-      <option name="METHOD_NAME" value="listarProdutosComNome" />
+      <option name="MAIN_CLASS_NAME" value="ControllerClienteTest" />
+      <option name="METHOD_NAME" value="editarCliente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FornecedorTest.setEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerClienteTest.exibeCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab05" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FornecedorTest" />
-      <option name="METHOD_NAME" value="setEmail" />
+      <option name="MAIN_CLASS_NAME" value="ControllerClienteTest" />
+      <option name="METHOD_NAME" value="exibeCliente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerClienteTest.listarClientes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab05" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProdutoTest" />
+      <option name="MAIN_CLASS_NAME" value="ControllerClienteTest" />
+      <option name="METHOD_NAME" value="listarClientes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerClienteTest.removerCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerClienteTest" />
+      <option name="METHOD_NAME" value="removerCliente" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FornecedorTest.setEmail" />
-      <item itemvalue="JUnit.FornecedorTest.listarProdutosComNome" />
-      <item itemvalue="JUnit.FornecedorTest.equals1" />
-      <item itemvalue="JUnit.ProdutoTest" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.ControllerClienteTest.cadastraCliente" />
+      <item itemvalue="JUnit.ControllerClienteTest.exibeCliente" />
+      <item itemvalue="JUnit.ControllerClienteTest.listarClientes" />
+      <item itemvalue="JUnit.ControllerClienteTest.removerCliente" />
+      <item itemvalue="JUnit.ControllerClienteTest.editarCliente" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ProdutoTest" />
-        <item itemvalue="JUnit.FornecedorTest.equals1" />
-        <item itemvalue="JUnit.FornecedorTest.listarProdutosComNome" />
-        <item itemvalue="JUnit.FornecedorTest.setEmail" />
+        <item itemvalue="JUnit.ControllerClienteTest.editarCliente" />
+        <item itemvalue="JUnit.ControllerClienteTest.removerCliente" />
+        <item itemvalue="JUnit.ControllerClienteTest.listarClientes" />
+        <item itemvalue="JUnit.ControllerClienteTest.exibeCliente" />
+        <item itemvalue="JUnit.ControllerClienteTest.cadastraCliente" />
       </list>
     </recent_temporary>
   </component>
@@ -333,98 +325,142 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FornecedorTest_removeProduto - 2019.10.01 at 09h 20m 19s.xml">
-      <configuration name="FornecedorTest.removeProduto" configurationId="JUnit" />
+    <history-entry file="ClienteTest_equals1 - 2019.10.01 at 21h 23m 40s.xml">
+      <configuration name="ClienteTest.equals1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_toString1 - 2019.10.01 at 09h 20m 46s.xml">
-      <configuration name="FornecedorTest.toString1" configurationId="JUnit" />
+    <history-entry file="ClienteTest_equals1 - 2019.10.01 at 21h 23m 56s.xml">
+      <configuration name="ClienteTest.equals1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_cadastraProduto - 2019.10.01 at 09h 20m 50s.xml">
-      <configuration name="FornecedorTest.cadastraProduto" configurationId="JUnit" />
+    <history-entry file="ClienteTest_equals1 - 2019.10.01 at 21h 24m 21s.xml">
+      <configuration name="ClienteTest.equals1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_exibeProduto - 2019.10.01 at 09h 20m 54s.xml">
-      <configuration name="FornecedorTest.exibeProduto" configurationId="JUnit" />
+    <history-entry file="ControllerClienteTest_cadastraCliente - 2019.10.01 at 21h 47m 43s.xml">
+      <configuration name="ControllerClienteTest.cadastraCliente" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_setEmail - 2019.10.01 at 09h 20m 58s.xml">
-      <configuration name="FornecedorTest.setEmail" configurationId="JUnit" />
+    <history-entry file="ControllerClienteTest_exibeCliente - 2019.10.01 at 21h 48m 41s.xml">
+      <configuration name="ControllerClienteTest.exibeCliente" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_listarProdutosComNome - 2019.10.01 at 09h 22m 32s.xml">
-      <configuration name="FornecedorTest.listarProdutosComNome" configurationId="JUnit" />
+    <history-entry file="ControllerClienteTest_listarClientes - 2019.10.01 at 21h 49m 41s.xml">
+      <configuration name="ControllerClienteTest.listarClientes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_listarProdutosComNome - 2019.10.01 at 09h 22m 48s.xml">
-      <configuration name="FornecedorTest.listarProdutosComNome" configurationId="JUnit" />
+    <history-entry file="ControllerClienteTest_listarClientes - 2019.10.01 at 21h 50m 04s.xml">
+      <configuration name="ControllerClienteTest.listarClientes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_listarProdutosComNome - 2019.10.01 at 09h 23m 05s.xml">
-      <configuration name="FornecedorTest.listarProdutosComNome" configurationId="JUnit" />
+    <history-entry file="ControllerClienteTest_removerCliente - 2019.10.01 at 21h 51m 42s.xml">
+      <configuration name="ControllerClienteTest.removerCliente" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FornecedorTest_equals1 - 2019.10.01 at 09h 27m 59s.xml">
-      <configuration name="FornecedorTest.equals1" configurationId="JUnit" />
+    <history-entry file="ControllerClienteTest_editarCliente - 2019.10.01 at 21h 52m 26s.xml">
+      <configuration name="ControllerClienteTest.editarCliente" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProdutoTest - 2019.10.01 at 09h 35m 06s.xml">
-      <configuration name="ProdutoTest" configurationId="JUnit" />
+    <history-entry file="ControllerClienteTest_editarCliente - 2019.10.01 at 21h 55m 06s.xml">
+      <configuration name="ControllerClienteTest.editarCliente" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17246963" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32972974" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29840142" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3285968" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Coverage" order="1" side_tool="true" weight="0.32955465" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Lab05$ProdutoTest.ic" NAME="ProdutoTest Coverage Results" MODIFIED="1569961620542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Lab05$ControllerFornecedorTest.ic" NAME="ControllerFornecedorTest Coverage Results" MODIFIED="1569974877174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Lab05$FornecedorTest.ic" NAME="FornecedorTest Coverage Results" MODIFIED="1569961667908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Validacao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ControllerCliente.java">
+    <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Produto.java">
+    <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/ProdutoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/FornecedorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="-5">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setEmail#0;class#FornecedorTest#0" />
@@ -432,74 +468,207 @@
             <element signature="method#cadastraProduto#0;class#FornecedorTest#0" />
             <element signature="method#exibeProduto#0;class#FornecedorTest#0" />
             <element signature="method#listarProdutos#0;class#FornecedorTest#0" />
-            <element signature="method#listarProdutosComNome#0;class#FornecedorTest#0" />
             <element signature="method#editarProduto#0;class#FornecedorTest#0" />
             <element signature="method#removeProduto#0;class#FornecedorTest#0" />
+            <element signature="method#equals1#0;class#FornecedorTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/ProdutoTest.java">
+    <entry file="file://$PROJECT_DIR$/Tests/ControllerFornecedorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ControllerFornecedor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2492">
-          <caret line="29" column="82" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="119">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="method#setUp#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#cadastraFornecedor#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#exibeFornecedor#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#listarFornecedores#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#editarFornecedor#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#removerFornecedor#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#exibeProduto#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#listarProdutosDoFornecedor#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#listarTodosProdutos#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#editarProduto#0;class#ControllerFornecedorTest#0" />
+            <element signature="method#removerProduto#0;class#ControllerFornecedorTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Fornecedor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="-44">
+          <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;field#nome#0;class#Fornecedor#0" />
+            <element signature="docComment;field#email#0;class#Fornecedor#0" />
+            <element signature="docComment;field#telefone#0;class#Fornecedor#0" />
+            <element signature="docComment;field#produtos#0;class#Fornecedor#0" />
+            <element signature="docComment;field#validadorString#0;class#Fornecedor#0" />
+            <element signature="docComment;method#Fornecedor#0;class#Fornecedor#0" />
+            <element signature="method#Fornecedor#0;class#Fornecedor#0" />
+            <element signature="method#setEmail#0;class#Fornecedor#0" />
             <element signature="method#setTelefone#0;class#Fornecedor#0" />
             <element signature="docComment;method#toString#0;class#Fornecedor#0" />
-            <element signature="e#1647#1648#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
             <element signature="docComment;method#cadastraProduto#0;class#Fornecedor#0" />
             <element signature="method#cadastraProduto#0;class#Fornecedor#0" />
             <element signature="docComment;method#exibeProduto#0;class#Fornecedor#0" />
             <element signature="method#exibeProduto#0;class#Fornecedor#0" />
             <element signature="docComment;method#listarProdutos#0;class#Fornecedor#0" />
             <element signature="method#listarProdutos#0;class#Fornecedor#0" />
-            <element signature="e#4958#4959#0" expanded="true" />
-            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="docComment;method#listarProdutosComNome#0;class#Fornecedor#0" />
+            <element signature="docComment;method#editarProduto#0;class#Fornecedor#0" />
+            <element signature="method#editarProduto#0;class#Fornecedor#0" />
+            <element signature="docComment;method#removeProduto#0;class#Fornecedor#0" />
+            <element signature="method#removeProduto#0;class#Fornecedor#0" />
+            <element signature="docComment;method#equals#0;class#Fornecedor#0" />
+            <element signature="method#equals#0;class#Fornecedor#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_1.txt">
+    <entry file="file://$PROJECT_DIR$/src/Produto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="612">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+          <folding>
+            <element signature="docComment;field#nome#0;class#Produto#0" />
+            <element signature="docComment;field#descricao#0;class#Produto#0" />
+            <element signature="docComment;field#preco#0;class#Produto#0" />
+            <element signature="docComment;field#validadorString#0;class#Produto#0" />
+            <element signature="docComment;method#Produto#0;class#Produto#0" />
+            <element signature="docComment;method#toString#0;class#Produto#0" />
+            <element signature="docComment;method#equals#0;class#Produto#0" />
+            <element signature="method#equals#0;class#Produto#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/ControllerFornecedor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="98" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
+        <state relative-caret-position="-236">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;field#fornecedores#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;field#validadorString#0;class#ControllerFornecedor#0" />
+            <element signature="method#ControllerFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#cadastraFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="method#cadastraFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#exibeFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="method#exibeFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#listarFornecedores#0;class#ControllerFornecedor#0" />
+            <element signature="method#listarFornecedores#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#editarFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="method#editarFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#removerFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="method#removerFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#cadastrarProduto#0;class#ControllerFornecedor#0" />
+            <element signature="method#cadastrarProduto#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#exibeProduto#0;class#ControllerFornecedor#0" />
+            <element signature="method#exibeProduto#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#listarProdutosDoFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="method#listarProdutosDoFornecedor#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#listarTodosProdutos#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#editarProduto#0;class#ControllerFornecedor#0" />
+            <element signature="method#editarProduto#0;class#ControllerFornecedor#0" />
+            <element signature="docComment;method#removerProduto#0;class#ControllerFornecedor#0" />
+            <element signature="method#removerProduto#0;class#ControllerFornecedor#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Facade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="124">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding>
+            <element signature="method#Facade#0;class#Facade#0" />
+            <element signature="method#adicionaCliente#0;class#Facade#0" />
+            <element signature="method#editaCliente#0;class#Facade#0" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="method#adicionaFornecedor#0;class#Facade#0" />
+            <element signature="method#editaFornecedor#0;class#Facade#0" />
+            <element signature="method#adicionaProduto#0;class#Facade#0" />
+            <element signature="method#exibeProduto#0;class#Facade#0" />
+            <element signature="method#listarProdutosDoFornecedor#0;class#Facade#0" />
+            <element signature="method#editaProduto#0;class#Facade#0" />
+            <element signature="method#removeProduto#0;class#Facade#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="34" selection-end-column="80" />
+          <folding>
+            <element signature="docComment;field#cpf#0;class#Cliente#0" />
+            <element signature="docComment;field#nome#0;class#Cliente#0" />
+            <element signature="docComment;field#email#0;class#Cliente#0" />
+            <element signature="docComment;field#localizacao#0;class#Cliente#0" />
+            <element signature="docComment;field#validadorString#0;class#Cliente#0" />
+            <element signature="method#Cliente#0;class#Cliente#0" />
+            <element signature="docComment;method#toString#0;class#Cliente#0" />
+            <element signature="docComment;method#setNome#0;class#Cliente#0" />
+            <element signature="docComment;method#setEmail#0;class#Cliente#0" />
+            <element signature="method#setEmail#0;class#Cliente#0" />
+            <element signature="docComment;method#setLocalizacao#0;class#Cliente#0" />
+            <element signature="method#setLocalizacao#0;class#Cliente#0" />
+            <element signature="docComment;method#equals#0;class#Cliente#0" />
+            <element signature="method#equals#0;class#Cliente#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/ControllerClienteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding>
+            <element signature="method#setUp#0;class#ControllerClienteTest#0" />
+            <element signature="method#cadastraCliente#0;class#ControllerClienteTest#0" />
+            <element signature="method#exibeCliente#0;class#ControllerClienteTest#0" />
+            <element signature="method#listarClientes#0;class#ControllerClienteTest#0" />
+            <element signature="method#editarCliente#0;class#ControllerClienteTest#0" />
+            <element signature="method#removerCliente#0;class#ControllerClienteTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/ClienteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="method#setNome#0;class#ClienteTest#0" />
+            <element signature="method#setEmail#0;class#ClienteTest#0" />
+            <element signature="method#setLocalizacao#0;class#ClienteTest#0" />
+            <element signature="method#equals1#0;class#ClienteTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ControllerCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="89" column="74" lean-forward="true" selection-start-line="89" selection-start-column="74" selection-end-line="89" selection-end-column="74" />
+          <folding>
+            <element signature="docComment;field#clientes#0;class#ControllerCliente#0" />
+            <element signature="docComment;field#validadorString#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#ControllerCliente#0;class#ControllerCliente#0" />
+            <element signature="method#ControllerCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#cadastraCliente#0;class#ControllerCliente#0" />
+            <element signature="method#cadastraCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#exibeCliente#0;class#ControllerCliente#0" />
+            <element signature="method#exibeCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#listarClientes#0;class#ControllerCliente#0" />
+            <element signature="method#listarClientes#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#editarCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#removerCliente#0;class#ControllerCliente#0" />
+            <element signature="method#removerCliente#0;class#ControllerCliente#0" />
+          </folding>
         </state>
       </provider>
     </entry>

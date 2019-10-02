@@ -24,11 +24,11 @@ public class Facade {
         this.controllerCliente.editarCliente(cpf, opcao, novoValor);
     }
 
-    public String removerCliente(String cpf){
-        return this.controllerCliente.removerCliente(cpf);
+    public void removeCliente(String cpf){
+        this.controllerCliente.removerCliente(cpf);
     }
 
-    public String cadastrarFornecedor (String nome, String email, String telefone){
+    public String adicionaFornecedor(String nome, String email, String telefone){
         return this.controllerFornecedor.cadastraFornecedor(nome, email, telefone);
     }
 
@@ -40,19 +40,19 @@ public class Facade {
         return this.controllerFornecedor.listarFornecedores();
     }
 
-    public void editarFornecedor (String nome, String opcao, String novoValor){
+    public void editaFornecedor(String nome, String opcao, String novoValor){
         this.controllerFornecedor.editarFornecedor(nome, opcao, novoValor);
     }
 
-    public void removerFornecedor (String nome){
+    public void removeFornecedor(String nome){
         this.controllerFornecedor.removerFornecedor(nome);
     }
 
-    public void cadastrarProduto (String fornecedor, String nomeProduto, String descricao, double preco){
+    public void adicionaProduto(String fornecedor, String nomeProduto, String descricao, double preco){
         this.controllerFornecedor.cadastrarProduto(fornecedor, nomeProduto, descricao, preco);
     }
 
-    public String exibeProduto (String fornecedor, String nomeProduto, String descricao){
+    public String exibeProduto (String nomeProduto, String descricao, String fornecedor){
         return this.controllerFornecedor.exibeProduto(fornecedor, nomeProduto, descricao);
     }
 
@@ -64,11 +64,11 @@ public class Facade {
         return this.controllerFornecedor.listarTodosProdutos();
     }
 
-    public void editarProduto (String fornecedor, String nomeProduto, String descricao, double novoPreco){
+    public void editaProduto(String nomeProduto, String descricao, String fornecedor, double novoPreco){
         this.controllerFornecedor.editarProduto(fornecedor, nomeProduto, descricao, novoPreco);
     }
 
-    public void removerProduto (String fornecedor, String nomeProduto, String descricao){
+    public void removeProduto(String nomeProduto, String descricao, String fornecedor){
         this.controllerFornecedor.removerProduto(fornecedor, nomeProduto, descricao);
     }
 }
