@@ -1,5 +1,12 @@
 import java.util.Objects;
 
+/**
+ * Classe criada para Representar um Produto.
+ * Um Produto tem como atributos Nome, descricao e preco. O produto usa como identificador
+ * unico seu nome e sua descricao.
+ *
+ * @author Caetano Albuquerque - UFCG
+ */
 public class Produto {
 
     /**

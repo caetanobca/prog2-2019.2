@@ -1,7 +1,13 @@
 import java.util.HashMap;
 import java.util.Objects;
 
-
+/**
+ * Classe criada para Representar um Fornecedor
+ * Um fornecedor tem como atributo nome, Email, um telefone e um
+ * conjunto de produtos. O fornecedor tem como identificador unico o seu nome.
+ *
+ * @author Caetano Albuquerque - UFCG
+ */
 public class Fornecedor {
 
     /**

@@ -20,10 +20,38 @@ class FornecedorTest {
     }
 
     @Test
+    void setEmailNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.setEmail(null);
+        });
+    }
+
+    @Test
+    void setEmailVazio(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.setEmail("");
+        });
+    }
+
+    @Test
     void setTelefone() {
         assertEquals("Dona Ines - dona.ines@cantina.ufcg.br - 83 99876-5432", fornecedor1.toString());
         this.fornecedor1.setTelefone("83 98805-3354");
         assertEquals("Dona Ines - dona.ines@cantina.ufcg.br - 83 98805-3354", fornecedor1.toString());
+    }
+
+    @Test
+    void setTelefoneNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.setTelefone(null);
+        });
+    }
+
+    @Test
+    void setTelefoneVazio(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.setTelefone("");
+        });
     }
 
     @Test
@@ -39,6 +67,26 @@ class FornecedorTest {
     }
 
     @Test
+    void cadastraProdutoNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.cadastraProduto(null, "Bala de mente", 0.15);
+        });
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.cadastraProduto("Bala", null, 0.15);
+        });
+    }
+
+    @Test
+    void cadastraProdutoVazio(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.cadastraProduto("", "Bala de menta", 0.15);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.cadastraProduto("Bala", "", 0.15);
+        });
+    }
+
+    @Test
     void exibeProduto() {
         this.fornecedor1.cadastraProduto("Tapioca", "tapioca com queijo", 2.75);
         this.fornecedor1.cadastraProduto("Tapioca G", "tapioca com queijo", 5.00);
@@ -47,6 +95,20 @@ class FornecedorTest {
                 this.fornecedor1.exibeProduto("Tapioca", "tapioca com queijo"));
         assertEquals("Tapioca G - tapioca com queijo - R$5,00",
                 this.fornecedor1.exibeProduto("Tapioca G", "tapioca com queijo"));
+    }
+
+    @Test
+    void exibeProdutoNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.cadastraProduto(null, null, 0.15);
+        });
+    }
+
+    @Test
+    void exibeProdutoVazio(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.cadastraProduto("Bala", "", 0.15);
+        });
     }
 
     @Test
@@ -85,6 +147,26 @@ class FornecedorTest {
     }
 
     @Test
+    void editarProdutoNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.editarProduto(null, "Bala de menta", 0.2);
+        });
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.editarProduto("Bala", null, 0.2);
+        });
+    }
+
+    @Test
+    void editarProdutoVazio(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.editarProduto("", "Bala de menta", 0.15);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.editarProduto("Bala", "", 0.15);
+        });
+    }
+
+    @Test
     void removeProduto() {
         this.fornecedor1.cadastraProduto("Tapioca", "tapioca com queijo", 2.75);
         this.fornecedor1.cadastraProduto("Bala", "bala de menta", 0.10);
@@ -93,6 +175,26 @@ class FornecedorTest {
 
         this.fornecedor1.removeProduto("Bala", "bala de menta");
         assertEquals("Tapioca - tapioca com queijo - R$2,75", this.fornecedor1.listarProdutos());
+    }
+
+    @Test
+    void removeProdutoNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.removeProduto(null, "Bala de menta");
+        });
+        assertThrows(NullPointerException.class, () -> {
+            this.fornecedor1.removeProduto("Bala", null);
+        });
+    }
+
+    @Test
+    void removeProdutoVazio(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.cadastraProduto("", "Bala de menta", 0.15);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.fornecedor1.cadastraProduto("Bala", "", 0.15);
+        });
     }
 
     @Test

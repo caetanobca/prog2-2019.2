@@ -1,5 +1,12 @@
 import java.util.HashMap;
 
+/**
+ * Criado para controlar os objetos do tipo Cliente
+ * Um ControllerCliente possui um Conjunto de Clientes, que possuem como chave o CPF do Cliente e um
+ * objeto que e responsavel por verificar a validade das strings.
+ *
+ * @author Caetano Albuquerque - UFCG
+ */
 public class ControllerCliente {
 
     /**
@@ -73,9 +80,7 @@ public class ControllerCliente {
             result += this.clientes.get(cpf).toString() + " | ";
 
         }
-        if (result.equals("")){
-            result = "Nenhum cliente cadastrado";
-        }else {
+        if (!result.equals("")){
             result = result.substring(0, result.length() - 3);
         }
         return result;

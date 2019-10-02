@@ -1,5 +1,12 @@
 import java.util.HashMap;
 
+/**
+ * Criado para controlar os objetos do tipo Fornecedor
+ * Um ControllerFornecedor possui um Conjunto de fornecedores, que possuem como chave o nome do fornecedor e um
+ * objeto que e responsavel por verificar a validade das strings.
+ *
+ * @author Caetano Albuquerque - UFCG
+ */
 public class ControllerFornecedor {
 
     /**

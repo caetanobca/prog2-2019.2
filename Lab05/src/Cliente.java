@@ -1,5 +1,11 @@
 import java.util.Objects;
-
+/**
+ * Classe criada para Representar um Cliente.
+ * Um Cliente tem com atributos CPF, Nome, Email e
+ * Localizacao. E usa como indentificador unico o CPF.
+ *
+ * @author Caetano Albuquerque - UFCG
+ */
 public class Cliente {
 
     /**

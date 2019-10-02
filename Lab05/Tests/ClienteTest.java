@@ -24,15 +24,57 @@ class ClienteTest {
     }
 
     @Test
+    void setNomeNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.cliente.setNome(null);
+        });
+    }
+
+    @Test
+    void setNomeVazio(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.cliente.setNome("");
+        });
+    }
+
+    @Test
     void setEmail() {
         this.cliente.setEmail("ana.silva@ccc.ufcg.edu.br");
         assertEquals("Ana Silva - Embedded - ana.silva@ccc.ufcg.edu.br", this.cliente.toString());
     }
 
     @Test
+    void setEmailNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.cliente.setEmail(null);
+        });
+    }
+
+    @Test
+    void setEmailVazio(){
+        assertThrows(IllegalArgumentException.class, () -> {
+           this.cliente.setEmail("");
+        });
+    }
+
+    @Test
     void setLocalizacao() {
         this.cliente.setLocalizacao("LSD");
         assertEquals("Ana Silva - LSD - anasilva@ccc.ufcg.edu.br", this.cliente.toString());
+    }
+
+    @Test
+    void setLocalizacaoNull(){
+        assertThrows(NullPointerException.class, () -> {
+            this.cliente.setLocalizacao(null);
+        });
+    }
+
+    @Test
+    void setLocalizacaoVazia(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.cliente.setLocalizacao("");
+        });
     }
 
     @Test
