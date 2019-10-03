@@ -77,7 +77,9 @@ class ControllerClienteTest {
     @Test
     void listarClientes() {
         this.controllerCliente.cadastraCliente("00011122233", "Ana Silva", "anasilva@ccc.ufcg.edu.br", "Embedded");
-        assertEquals("Ano Silvao - LSD - anosilvao@ccc.ufcg.edu.br | Ana Silva - Embedded - anasilva@ccc.ufcg.edu.br",
+        this.controllerCliente.cadastraCliente("14714714714", "Caetano Albuquerque", "caetano.albuquerque@ccc.ufcg.edu.br", "CAA");
+        assertEquals("Ana Silva - Embedded - anasilva@ccc.ufcg.edu.br | Ano Silvao - LSD - anosilvao@ccc.ufcg.edu.br" +
+                        " | Caetano Albuquerque - CAA - caetano.albuquerque@ccc.ufcg.edu.br",
                 this.controllerCliente.listarClientes());
     }
 

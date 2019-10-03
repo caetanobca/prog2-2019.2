@@ -78,7 +78,9 @@ class ControllerFornecedorTest {
 
     @Test
     void listarFornecedores() {
-        assertEquals("Dona Inalda - inalda@gmail.com - 83 99988-7766 | Dona Ines - dona.ines@gmail.com - 83 99965-4321",
+        this.controllerFornecedor.cadastraFornecedor("Seu Helio", "seu.helio@gmail.com", "83 99808-0808");
+        assertEquals("Dona Inalda - inalda@gmail.com - 83 99988-7766 | Dona Ines - dona.ines@gmail.com - 83 99965-4321" +
+                        " | Seu Helio - seu.helio@gmail.com - 83 99808-0808",
                 this.controllerFornecedor.listarFornecedores());
 
     }
@@ -250,6 +252,8 @@ class ControllerFornecedorTest {
 
     @Test
     void listarTodosProdutos() {
+        this.controllerFornecedor.cadastraFornecedor("Seu Helio", "seu.helio@gmail.com", "83 99808-0808");
+
         this.controllerFornecedor.cadastrarProduto("Dona Inalda", "Tapioca", "tapioca com queijo", 2.75);
         assertEquals("Dona Inalda - Tapioca - tapioca com queijo - R$2,75", this.controllerFornecedor.listarTodosProdutos());
 
@@ -257,9 +261,11 @@ class ControllerFornecedorTest {
         assertEquals("Dona Inalda - Tapioca - tapioca com queijo - R$2,75 | " +
                 "Dona Ines - Tapioca - tapioca com queijo - R$2,75", this.controllerFornecedor.listarTodosProdutos());
 
+        this.controllerFornecedor.cadastrarProduto("Seu Helio", "Misto", "Pao presunto e queijo", 3);
+
         this.controllerFornecedor.cadastrarProduto("Dona Ines", "Bala", "bala de menta", 0.15);
         assertEquals("Dona Inalda - Tapioca - tapioca com queijo - R$2,75 | " +
-                "Dona Ines - Tapioca - tapioca com queijo - R$2,75 | Dona Ines - Bala - bala de menta - R$0,15",
+                "Dona Ines - Tapioca - tapioca com queijo - R$2,75 | Dona Ines - Bala - bala de menta - R$0,15 | Seu Helio - Misto - Pao presunto e queijo - R$3,00",
                 this.controllerFornecedor.listarTodosProdutos());
     }
 

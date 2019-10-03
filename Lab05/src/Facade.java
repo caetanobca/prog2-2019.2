@@ -16,7 +16,7 @@ public class Facade {
         return this.controllerCliente.exibeCliente(cpf);
     }
 
-    public String listarClientes (){
+    public String exibeClientes(){
         return this.controllerCliente.listarClientes();
     }
 
@@ -36,7 +36,7 @@ public class Facade {
         return this.controllerFornecedor.exibeFornecedor(nome);
     }
 
-    public String listarFornecedores () {
+    public String exibeFornecedores() {
         return this.controllerFornecedor.listarFornecedores();
     }
 
@@ -60,8 +60,10 @@ public class Facade {
         return this.controllerFornecedor.listarProdutosDoFornecedor(fornecedor);
     }
 
-    public String listarTodosProdutos (){
-        return this.controllerFornecedor.listarTodosProdutos();
+    public String exibeProdutos(){
+        String a = this.controllerFornecedor.listarTodosProdutos();
+        System.out.println(a);
+        return a;
     }
 
     public void editaProduto(String nomeProduto, String descricao, String fornecedor, double novoPreco){
@@ -70,5 +72,9 @@ public class Facade {
 
     public void removeProduto(String nomeProduto, String descricao, String fornecedor){
         this.controllerFornecedor.removerProduto(fornecedor, nomeProduto, descricao);
+    }
+
+    public String exibeProdutosFornecedor (String fornecedor){
+        return this.controllerFornecedor.exibeProdutosFornecedor(fornecedor);
     }
 }

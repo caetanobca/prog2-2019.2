@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -8,7 +10,7 @@ import java.util.Objects;
  *
  * @author Caetano Albuquerque - UFCG
  */
-public class Fornecedor {
+public class Fornecedor<produtosList> {
 
     /**
      * Nome do fornecedor, que e seu indentificador unico
@@ -124,11 +126,20 @@ public class Fornecedor {
      * @return uma lista com todos os produtos cadastrados no fornecedor
      */
     public String listarProdutos() {
-        String result = "";
 
-        for (String nomeProduto : this.produtos.keySet()) {
-            result += this.produtos.get(nomeProduto).toString() + " | ";
+        ArrayList<String> produtosList = new ArrayList<>();
+
+        for (String nome : this.produtos.keySet()){
+            produtosList.add(this.produtos.get(nome).toString());
         }
+
+        Collections.sort(produtosList);
+
+        String result = "";
+        for (int i = 0; i < produtosList.size(); i++){
+            result += produtosList.get(i).toString() + " | ";
+        }
+
         if (result.equals("")) {
             result = "Nenhum produto cadastrado pelo fornecedor: " + this.nome;
         } else {
@@ -142,14 +153,24 @@ public class Fornecedor {
      * @return uma listagem de todos os produtos antecipados do nome do produtor
      */
     public String listarProdutosComNome() {
-        String result = "";
 
-        for (String nomeProduto : this.produtos.keySet()){
-            result += this.nome + " - " + this.produtos.get(nomeProduto).toString() + " | ";
+        ArrayList<String> produtosList = new ArrayList<>();
+
+        for (String nome : this.produtos.keySet()){
+            produtosList.add(this.produtos.get(nome).toString());
         }
 
-        if (!result.equals("")){
+        Collections.sort(produtosList);
+
+        String result = "";
+        for (int i = 0; i < produtosList.size(); i++){
+            result += this.nome + " - " + produtosList.get(i) + " | ";
+        }
+
+        if (!result.equals("")) {
             result = result.substring(0, result.length() - 3);
+        }else {
+            result = this.nome + " -";
         }
         return result;
     }

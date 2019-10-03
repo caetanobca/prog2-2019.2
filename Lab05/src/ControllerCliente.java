@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 /**
@@ -75,11 +77,19 @@ public class ControllerCliente {
      * @return a listagem de todos os clientes cadastrados no sistema
      */
     public String listarClientes() {
-        String result = "";
-        for (String cpf : this.clientes.keySet()){
-            result += this.clientes.get(cpf).toString() + " | ";
+        ArrayList<String> clientesList = new ArrayList<>();
 
+        for (String cpf : this.clientes.keySet()){
+            clientesList.add(this.clientes.get(cpf).toString());
         }
+
+        Collections.sort(clientesList);
+
+        String result = "";
+        for (int i = 0; i < clientesList.size(); i++){
+            result += clientesList.get(i) + " | ";
+        }
+
         if (!result.equals("")){
             result = result.substring(0, result.length() - 3);
         }

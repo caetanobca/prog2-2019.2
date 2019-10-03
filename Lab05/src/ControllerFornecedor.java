@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 /**
@@ -72,14 +74,21 @@ public class ControllerFornecedor {
      * os fornecedores retornados
      */
     public String listarFornecedores() {
-        String result = "";
-        for (String nome : this.fornecedores.keySet()){
-            result += this.fornecedores.get(nome).toString() + " | ";
 
+        ArrayList<String> fornecedoresList = new ArrayList<>();
+
+        for (String nome : this.fornecedores.keySet()){
+            fornecedoresList.add(this.fornecedores.get(nome).toString());
         }
-        if (result.equals("")){
-            result = "Nenhum Fornecedor cadastrado";
-        }else {
+
+        Collections.sort(fornecedoresList);
+
+        String result = "";
+        for (int i = 0; i < fornecedoresList.size(); i++){
+            result += fornecedoresList.get(i) + " | ";
+        }
+
+        if (!result.equals("")){
             result = result.substring(0, result.length() - 3);
         }
         return result;
@@ -191,16 +200,24 @@ public class ControllerFornecedor {
      * @return uma representacao de todos os produtos cadastrados em todos os fornecedores
      */
     public String listarTodosProdutos() {
-        String result = "";
+
+        ArrayList<String> produtosComNomeList = new ArrayList<>();
 
         for (String nome : this.fornecedores.keySet()){
-            if (!this.fornecedores.get(nome).listarProdutosComNome().equals("")) {
-                result += this.fornecedores.get(nome).listarProdutosComNome() + " | ";
+            if (!this.fornecedores.get(nome).listarProdutosComNome().equals("")){
+                produtosComNomeList.add(this.fornecedores.get(nome).listarProdutosComNome());
             }
         }
 
-        if (!result.equals("")){
-           result = result.substring(0, result.length() - 3);
+        Collections.sort(produtosComNomeList);
+
+        String result = "";
+        for (int i = 0; i < produtosComNomeList.size(); i++){
+            result += produtosComNomeList.get(i) + " | ";
+        }
+
+        if (!result.equals("")) {
+            result = result.substring(0, result.length() - 3);
         }
         return result;
     }
@@ -245,5 +262,13 @@ public class ControllerFornecedor {
             throw new IllegalArgumentException("Erro na remocao de produto: fornecedor nao existe.");
         }
 
+    }
+
+    public String exibeProdutosFornecedor(String fornecedor) {
+        this.validadorString.validaString(fornecedor, "Erro na exibicao de produto: fornecedor nao pode ser vazio ou nulo.");
+        if (!this.fornecedores.containsKey(fornecedor)){
+            throw new IllegalArgumentException("Erro na exibicao de produto: fornecedor nao existe.");
+        }
+        return this.fornecedores.get(fornecedor).listarProdutosComNome();
     }
 }
