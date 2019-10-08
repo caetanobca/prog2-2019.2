@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author Caetano Albuquerque - UFCG
  */
-public class Fornecedor<produtosList> {
+public class Fornecedor<produtosList> implements Comparable<Fornecedor> {
 
     /**
      * Nome do fornecedor, que e seu indentificador unico
@@ -229,5 +229,10 @@ public class Fornecedor<produtosList> {
     @Override
     public int hashCode() {
         return Objects.hash(nome);
+    }
+
+    @Override
+    public int compareTo(Fornecedor o) {
+       return this.toString().compareTo(o.toString());
     }
 }

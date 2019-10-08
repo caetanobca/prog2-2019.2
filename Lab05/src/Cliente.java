@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Objects;
 /**
  * Classe criada para Representar um Cliente.
@@ -34,6 +35,11 @@ public class Cliente {
     private Validacao validadorString;
 
     /**
+     * Mapa que guarda todas contas do clientes nos fornecedores
+     */
+    private HashMap <String, Conta> contas;
+
+    /**
      * Metodo que cria um objeto do tipo cliente a partir das entradas de cpf, nome, email e localizacao
      * @param cpf - cpf do cliente, que e o seu indentificador unico
      * @param nome - nome do cliente
@@ -52,7 +58,7 @@ public class Cliente {
         this.nome = nome;
         this.email = email;
         this.localizacao = localizacao;
-
+        this.contas = new HashMap<>();
     }
 
     /**

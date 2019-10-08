@@ -186,7 +186,7 @@ public class ControllerFornecedor {
      * @return retorna uma representacao de todos os produtos de determinado fornecedor
      */
     public String listarProdutosDoFornecedor(String fornecedor) {
-        this.validadorString.validaString(fornecedor, "aaaa");
+        this.validadorString.validaString(fornecedor, "");
 
         String result = "Fornecedor nao cadastrado";
         if (this.fornecedores.containsKey(fornecedor)){
@@ -201,19 +201,13 @@ public class ControllerFornecedor {
      */
     public String listarTodosProdutos() {
 
-        ArrayList<String> produtosComNomeList = new ArrayList<>();
+        ArrayList<Fornecedor> arrayListFornecedores = new ArrayList<Fornecedor>(this.fornecedores.values());
 
-        for (String nome : this.fornecedores.keySet()){
-            if (!this.fornecedores.get(nome).listarProdutosComNome().equals("")){
-                produtosComNomeList.add(this.fornecedores.get(nome).listarProdutosComNome());
-            }
-        }
-
-        Collections.sort(produtosComNomeList);
+        Collections.sort(arrayListFornecedores);
 
         String result = "";
-        for (int i = 0; i < produtosComNomeList.size(); i++){
-            result += produtosComNomeList.get(i) + " | ";
+        for (int i = 0; i < arrayListFornecedores.size(); i++){
+            result += arrayListFornecedores.get(i).listarProdutosComNome() + " | ";
         }
 
         if (!result.equals("")) {
@@ -271,4 +265,5 @@ public class ControllerFornecedor {
         }
         return this.fornecedores.get(fornecedor).listarProdutosComNome();
     }
+
 }
