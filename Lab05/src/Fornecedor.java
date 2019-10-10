@@ -235,4 +235,13 @@ public class Fornecedor<produtosList> implements Comparable<Fornecedor> {
     public int compareTo(Fornecedor o) {
        return this.toString().compareTo(o.toString());
     }
+
+    public double getPreco(String nomeProduto, String descricaoProduto) {
+        if (!this.produtos.containsKey(nomeProduto + descricaoProduto)){
+            throw new IllegalArgumentException("Produto nao cadastrado");
+        }
+        else {
+            return this.produtos.get(nomeProduto + descricaoProduto).getPreco();
+        }
+    }
 }

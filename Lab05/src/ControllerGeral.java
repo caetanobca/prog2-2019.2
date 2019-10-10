@@ -109,4 +109,20 @@ public class ControllerGeral {
         return this.controllerFornecedor.exibeProdutosFornecedor(fornecedor);
     }
 
+    public void cadastraCompra(String cpf, String fornecedor, String data, String nomeProduto, String descricaoProduto) {
+        double preco = this.controllerFornecedor.getPrecoProduto(fornecedor, nomeProduto, descricaoProduto);
+        this.controllerCliente.cadastraCompra(cpf, fornecedor, data, nomeProduto, preco);
+    }
+
+    public double getDebitoCliente(String cpf, String fornecedor) {
+        return this.controllerCliente.getDebito(cpf,fornecedor);
+    }
+
+    public String getContaEmFornecedor(String cpf, String fornecedor) {
+        return this.controllerCliente.getContaEmFornecedor(cpf, fornecedor);
+    }
+
+    public String contaDeCliente(String cpf) {
+        return this.controllerCliente.contaCliente(cpf);
+    }
 }

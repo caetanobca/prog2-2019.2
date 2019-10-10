@@ -139,4 +139,19 @@ public class ControllerCliente {
     }
 
 
+    public void cadastraCompra(String cpf, String fornecedor, String data, String nomeProduto, double preco) {
+        this.clientes.get(cpf).cadastrarCompra(fornecedor, data, nomeProduto, preco);
+    }
+
+    public double getDebito(String cpf, String fornecedor) {
+        return this.clientes.get(cpf).getDebito(fornecedor);
+    }
+
+    public String getContaEmFornecedor(String cpf, String fornecedor) {
+        return this.clientes.get(cpf).getContaEmfornecedor(fornecedor);
+    }
+
+    public String contaCliente(String cpf) {
+        return this.clientes.get(cpf).getConta();
+    }
 }

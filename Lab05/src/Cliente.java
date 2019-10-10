@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Objects;
 /**
@@ -113,5 +115,40 @@ public class Cliente {
     @Override
     public int hashCode() {
         return Objects.hash(cpf);
+    }
+
+    public void cadastrarCompra(String fornecedor, String data, String nomeProduto, double preco) {
+        if (this.contas.containsKey(fornecedor)){
+            throw new IllegalArgumentException("Fconta ja feita");
+        }
+        this.contas.put(fornecedor, new Conta(fornecedor, data, nomeProduto, preco));
+    }
+
+    public double getDebito(String fornecedor) {
+        return this.contas.get(fornecedor).getDebito();
+    }
+
+    public String getContaEmfornecedor(String fornecedor) {
+        return this.contas.get(fornecedor).toString();
+    }
+
+    public String getConta() {
+        ArrayList<String> contasList = new ArrayList<>();
+
+        for (String fornecedor : this.contas.keySet()){
+            contasList.add(this.contas.get(fornecedor).toString());
+        }
+
+        Collections.sort(contasList);
+
+        String result = "";
+        for (int i = 0; i < contasList.size(); i++){
+            result += contasList.get(i) + System.lineSeparator();
+        }
+
+        if (!result.equals("")) {
+            result = result.substring(0, result.length() - 1);
+        }
+        return result;
     }
 }

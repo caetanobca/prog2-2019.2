@@ -266,4 +266,11 @@ public class ControllerFornecedor {
         return this.fornecedores.get(fornecedor).listarProdutosComNome();
     }
 
+    public double getPrecoProduto(String fornecedor, String nomeProduto, String descricaoProduto) {
+        if (this.fornecedores.containsKey(fornecedor)) {
+            return this.fornecedores.get(fornecedor).getPreco(nomeProduto, descricaoProduto);
+        }else{
+            throw new IllegalArgumentException("Fornecedor nao cadastrado");
+        }
+    }
 }

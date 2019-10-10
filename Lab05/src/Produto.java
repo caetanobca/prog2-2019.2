@@ -85,4 +85,8 @@ public class Produto {
     public int hashCode() {
         return Objects.hash(nome, descricao);
     }
+
+    public double getPreco() {
+        return this.preco;
+    }
 }

@@ -52,7 +52,7 @@ public class Facade {
     }
 
     public String exibeProduto (String nomeProduto, String descricao, String fornecedor){
-        return this.controllerGeral.exibeProduto(fornecedor, nomeProduto, descricao);
+        return this.controllerGeral.exibeProduto(nomeProduto, descricao, fornecedor);
     }
 
     public String listarProdutosDoFornecedor(String fornecedor){
@@ -60,35 +60,36 @@ public class Facade {
     }
 
     public String exibeProdutos(){
-        return this.controllerGeral.exibeFornecedores();
+        return this.controllerGeral.exibeProdutos();
     }
 
     public void editaProduto(String nomeProduto, String descricao, String fornecedor, double novoPreco){
-        this.controllerGeral.editaProduto(fornecedor, nomeProduto, descricao, novoPreco);
+        this.controllerGeral.editaProduto(nomeProduto, descricao, fornecedor, novoPreco);
     }
 
     public void removeProduto(String nomeProduto, String descricao, String fornecedor){
-        this.controllerGeral.removeProduto(fornecedor, nomeProduto, descricao);
+        this.controllerGeral.removeProduto(nomeProduto, descricao, fornecedor);
     }
 
     public String exibeProdutosFornecedor (String fornecedor){
         return this.controllerGeral.exibeProdutosFornecedor(fornecedor);
     }
-//
-//    public void cadastrarCompra (String cpf, String fornecedor, String data, String nome_produto, String descrição_produto){
-//        this.controllerGeral.cadastraCompra(cpf, fornecedor, data, nome_produto, descrição_produto);
-//
-//    }
-//
-//    public double getDebito (String cpf, String fornecedor){
-//
-//    }
-//
-//    public String getContaEmFornecedor (String cpf, String fornecedor){
-//
-//    }
-//
-//    public String contaDeCliente (String cpf){
 
-//    }
+    public void adicionaCompra (String cpf, String fornecedor, String data, String nomeProduto, String descricaoProduto){
+        this.controllerGeral.cadastraCompra(cpf, fornecedor, data, nomeProduto, descricaoProduto);
+
+    }
+
+    public double getDebito (String cpf, String fornecedor){
+        return this.controllerGeral.getDebitoCliente(cpf, fornecedor);
+    }
+
+    public String getContaEmFornecedor (String cpf, String fornecedor){
+        return this.controllerGeral.getContaEmFornecedor(cpf, fornecedor);
+    }
+
+    public String contaDeCliente (String cpf){
+        return this.controllerGeral.contaDeCliente(cpf);
+
+    }
 }
