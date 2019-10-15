@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * Classe criada para Representar um Fornecedor
@@ -29,9 +26,9 @@ public class Fornecedor<produtosList> implements Comparable<Fornecedor> {
 
     /**
      * Mapa que usa como chave uma string que e formada pela a concatenacao do nome e descricao de um produto
-     * como chave e armazena objetos do tipo Produto
+     * como chave e armazena objetos do tipo ProdutoUnitario
      */
-    private HashMap<String, Produto> produtos;
+    private Map<String, ProdutoInterface> produtos;
 
     /**
      * Objeto que tem funcoes que permite saber se as entradas sao validas
@@ -96,7 +93,7 @@ public class Fornecedor<produtosList> implements Comparable<Fornecedor> {
         if (this.produtos.containsKey(nomeProduto + descricao)) {
             throw new IllegalArgumentException("Erro no cadastro de produto: produto ja existe.");
         } else {
-            this.produtos.put((nomeProduto + descricao), new Produto(nomeProduto, descricao, preco));
+            this.produtos.put((nomeProduto + descricao), new ProdutoUnitario(nomeProduto, descricao, preco));
 
         }
     }
@@ -127,10 +124,10 @@ public class Fornecedor<produtosList> implements Comparable<Fornecedor> {
      */
     public String listarProdutos() {
 
-        ArrayList<String> produtosList = new ArrayList<>();
+        ArrayList<ProdutoInterface> produtosList = new ArrayList<>();
 
         for (String nome : this.produtos.keySet()){
-            produtosList.add(this.produtos.get(nome).toString());
+            produtosList.add(this.produtos.get(nome));
         }
 
         Collections.sort(produtosList);
@@ -154,10 +151,10 @@ public class Fornecedor<produtosList> implements Comparable<Fornecedor> {
      */
     public String listarProdutosComNome() {
 
-        ArrayList<String> produtosList = new ArrayList<>();
+        ArrayList<ProdutoInterface> produtosList = new ArrayList<>();
 
         for (String nome : this.produtos.keySet()){
-            produtosList.add(this.produtos.get(nome).toString());
+            produtosList.add(this.produtos.get(nome));
         }
 
         Collections.sort(produtosList);
@@ -190,7 +187,7 @@ public class Fornecedor<produtosList> implements Comparable<Fornecedor> {
         }
 
         if (this.produtos.containsKey(nomeProduto + descricao)){
-            this.produtos.get(nomeProduto + descricao).setPreco(novoPreco);
+            this.produtos.get(nomeProduto + descricao).editarProduto(novoPreco);
         }
         else {
             throw new IllegalArgumentException("Erro na edicao de produto: produto nao existe.");
@@ -237,11 +234,59 @@ public class Fornecedor<produtosList> implements Comparable<Fornecedor> {
     }
 
     public double getPreco(String nomeProduto, String descricaoProduto) {
+        this.validadorString.validaString(nomeProduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricaoProduto, "Erro ao cadastrar compra: descricao do produto nao pode ser vazia ou nula.");
+
         if (!this.produtos.containsKey(nomeProduto + descricaoProduto)){
-            throw new IllegalArgumentException("Produto nao cadastrado");
+            throw new IllegalArgumentException("Erro ao cadastrar compra: produto nao existe.");
         }
         else {
             return this.produtos.get(nomeProduto + descricaoProduto).getPreco();
+        }
+    }
+
+    public boolean existeProduto(String nomeProduto, String descricaoProduto) {
+        if (this.produtos.containsKey(nomeProduto + descricaoProduto)){
+            return true;
+        }
+        return false;
+    }
+
+    public void adicionaCombo(String nomeCombo, String descricaoCombo, double fator, String produtos) {
+        String[] produtosCombo = produtos.split(", ");
+        String[] nomeEDescricao = new String[2];
+        double preco = 0;
+        for (int i = 0; i < produtosCombo.length; i++){
+            nomeEDescricao = produtosCombo[i].split(" - ");
+            if (this.produtos.containsKey(nomeEDescricao[0] + nomeEDescricao [1])){
+                if (this.produtos.get(nomeEDescricao[0] + nomeEDescricao[1]) instanceof Combo){
+                    throw new IllegalArgumentException("Erro no cadastro de combo: um combo nao pode possuir combos na lista de produtos.");
+                }
+                preco += this.produtos.get(nomeEDescricao[0]+ nomeEDescricao [1]).getPreco();
+            }else {
+                throw new IllegalArgumentException("Erro no cadastro de combo: produto nao existe.");
+            }
+        }
+
+        if(this.produtos.containsKey(nomeCombo + descricaoCombo)){
+            throw new IllegalArgumentException("Erro no cadastro de combo: combo ja existe.");
+        }
+        this.produtos.put(nomeCombo + descricaoCombo, new Combo(nomeCombo, descricaoCombo, fator, preco));
+    }
+
+    public void editarCombo(String nomeCombo, String descricaoCombo, double novoFator) {
+        this.validadorString.validaString(nomeCombo, "Erro no cadastro de combo: nome nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricaoCombo, "Erro no cadastro de combo: descricao nao pode ser vazia ou nula.");
+
+        if (novoFator <= 0 || novoFator >= 1){
+            throw new IllegalArgumentException("Erro na edicao de combo: fator invalido.");
+        }
+
+        if (this.produtos.containsKey(nomeCombo + descricaoCombo)){
+            this.produtos.get(nomeCombo + descricaoCombo).editarProduto(novoFator);
+        }
+        else {
+            throw new IllegalArgumentException("Erro na edicao de combo: produto nao existe.");
         }
     }
 }

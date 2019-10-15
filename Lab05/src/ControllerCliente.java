@@ -21,12 +21,15 @@ public class ControllerCliente {
      */
     private Validacao validadorString;
 
+    private ControllerFornecedor controllerFornecedor;
+
     /**
      * Inicializa o ControllerFornecedor
      */
-    public ControllerCliente(){
+    public ControllerCliente(ControllerFornecedor controllerFornecedor) {
         this.clientes = new HashMap<String, Cliente>();
         this.validadorString = new Validacao();
+        this.controllerFornecedor = controllerFornecedor;
     }
 
     /**
@@ -139,19 +142,97 @@ public class ControllerCliente {
     }
 
 
-    public void cadastraCompra(String cpf, String fornecedor, String data, String nomeProduto, double preco) {
+    /**
+     * Metodo que cadastra uma nova compra em um cliente, caso o cliente nao tenha uma conta com o fornecedor,
+     * o metodo ira criar uma nova conta
+     * @param cpf - cpf do cliente -identificador uncio-
+     * @param fornecedor - nome do fornecedor -identificador unico-
+     * @param data - data em que a compra foi realizada
+     * @param nomeProduto - nome do produto que foi comprado
+     * @param descricaoProduto - descricao do produto que foi comprado
+     */
+    public void cadastraCompra(String cpf, String fornecedor, String data, String nomeProduto, String descricaoProduto) {
+        this.validadorString.validaString(cpf, "Erro ao cadastrar compra: cpf nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(fornecedor, "Erro ao cadastrar compra: fornecedor nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(data, "Erro ao cadastrar compra: data nao pode ser vazia ou nula.");
+        this.validadorString.validaString(nomeProduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricaoProduto, "Erro ao cadastrar compra: descricao do produto nao pode ser vazia ou nula.");
+
+        double preco;
+        if (!(cpf.length() == 11)){
+            throw new IllegalArgumentException("Erro ao cadastrar compra: cpf invalido.");
+        }else if(!this.clientes.containsKey(cpf)){
+            throw new IllegalArgumentException("Erro ao cadastrar compra: cliente nao existe.");
+        }else if(!(data.length() == 10)){
+            throw new IllegalArgumentException("Erro ao cadastrar compra: data invalida.");
+        }
+        if (!(this.controllerFornecedor.existeFornecedo(fornecedor))){
+            throw new IllegalArgumentException("Erro ao cadastrar compra: fornecedor nao existe.");
+        }else{
+            preco = this.controllerFornecedor.getPrecoProduto(fornecedor, nomeProduto, descricaoProduto);
+        }
+
         this.clientes.get(cpf).cadastrarCompra(fornecedor, data, nomeProduto, preco);
+
+
+
     }
 
-    public double getDebito(String cpf, String fornecedor) {
+    /**
+     * Metodo que calcula o quanto um determinado cliente esta devendo a determinado fornecedor
+     * @param cpf - cpf do cliente -identificador unico-
+     * @param fornecedor - nome do fornecedor -identificador unico
+     * @return o valor que um cliente esta devendo a determinado fornecedor
+     */
+    public String getDebito(String cpf, String fornecedor) {
+        this.validadorString.validaString(cpf, "Erro ao recuperar debito: cpf nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(fornecedor, "Erro ao recuperar debito: fornecedor nao pode ser vazio ou nulo.");
+
+        if (!(cpf.length() == 11)){
+            throw new IllegalArgumentException("Erro ao recuperar debito: cpf invalido.");
+        }else if (!this.clientes.containsKey(cpf)){
+            throw new IllegalArgumentException("Erro ao recuperar debito: cliente nao existe.");
+        }else if (!this.controllerFornecedor.existeFornecedo(fornecedor)) {
+            throw new IllegalArgumentException("Erro ao recuperar debito: fornecedor nao existe.");
+        }
+
         return this.clientes.get(cpf).getDebito(fornecedor);
     }
 
+    /**
+     * Metodo que cria uma representacao textual de uma contade do cliente em determinado fornecedor
+     * @param cpf - cpf do cliente -identificador unico-
+     * @param fornecedor - nome do fornecedor -identificador unico-
+     * @return uma representacao textual da conta que o cliente tem em determinado fornecedor
+     */
     public String getContaEmFornecedor(String cpf, String fornecedor) {
+        this.validadorString.validaString(cpf, "Erro ao exibir conta do cliente: cpf nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(fornecedor, "Erro ao exibir conta do cliente: fornecedor nao pode ser vazio ou nulo.");
+
+        if (!(cpf.length() == 11)){
+            throw new IllegalArgumentException("Erro ao exibir conta do cliente: cpf invalido.");
+        }else if (!this.clientes.containsKey(cpf)){
+            throw new IllegalArgumentException("Erro ao exibir conta do cliente: cliente nao existe.");
+        }
+        if (!(this.controllerFornecedor.existeFornecedo(fornecedor))){
+            throw new IllegalArgumentException("Erro ao exibir conta do cliente: fornecedor nao existe." );
+        }
+
         return this.clientes.get(cpf).getContaEmfornecedor(fornecedor);
     }
 
+    /**
+     * cria uma representacao textual de todas as contas que o cliente tem
+     * @param cpf - cpf do cliente -identificador unico-
+     * @return todas as contas que o cliente possui
+     */
     public String contaCliente(String cpf) {
+        this.validadorString.validaString(cpf, "Erro ao exibir contas do cliente: cpf nao pode ser vazio ou nulo.");
+        if (!(cpf.length() == 11)){
+            throw new IllegalArgumentException("Erro ao exibir contas do cliente: cpf invalido.");
+        }else if (!this.clientes.containsKey(cpf)){
+            throw new IllegalArgumentException("Erro ao exibir contas do cliente: cliente nao existe.");
+        }
         return this.clientes.get(cpf).getConta();
     }
 }

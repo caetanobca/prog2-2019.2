@@ -85,4 +85,20 @@ class ClienteTest {
         assertTrue(this.cliente.equals(new Cliente("00011122233", "Ano Silvao",
                 "anosilvao@ccc.ufcg.edu.br", "LSD")));
     }
+
+    @Test
+    void cadastrarCompra() {
+    }
+
+    @Test
+    void getDebito() {
+    }
+
+    @Test
+    void getContaEmfornecedor() {
+    }
+
+    @Test
+    void getConta() {
+    }
 }

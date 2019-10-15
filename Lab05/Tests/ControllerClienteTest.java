@@ -6,10 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class ControllerClienteTest {
 
     private ControllerCliente controllerCliente;
+    private ControllerFornecedor controllerFornecedor;
 
     @BeforeEach
     void setUp() {
-        this.controllerCliente = new ControllerCliente();
+        this.controllerFornecedor = new ControllerFornecedor();
+        this.controllerCliente = new ControllerCliente(controllerFornecedor);
         this.controllerCliente.cadastraCliente("33322211100", "Ano Silvao", "anosilvao@ccc.ufcg.edu.br", "LSD");
     }
 
@@ -153,5 +155,22 @@ class ControllerClienteTest {
             this.controllerCliente.removerCliente("");
         });
 
+    }
+
+
+    @Test
+    void cadastraCompra() {
+    }
+
+    @Test
+    void getDebito() {
+    }
+
+    @Test
+    void getContaEmFornecedor() {
+    }
+
+    @Test
+    void contaCliente() {
     }
 }

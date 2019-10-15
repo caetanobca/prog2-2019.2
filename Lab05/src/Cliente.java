@@ -60,7 +60,7 @@ public class Cliente {
         this.nome = nome;
         this.email = email;
         this.localizacao = localizacao;
-        this.contas = new HashMap<>();
+        this.contas = new HashMap<String, Conta>();
     }
 
     /**
@@ -100,6 +100,79 @@ public class Cliente {
     }
 
     /**
+     * Metodo que adicona compra em umaconta ja existente ou cria uma nova conta em determinado fornecedor
+     * @param fornecedor - nome do fornecedor -identificador unico-
+     * @param data - data em que a compra foi realizada
+     * @param nomeProduto - nome do produto comprado
+     * @param preco - preco do produto comprad
+     */
+    public void cadastrarCompra(String fornecedor, String data, String nomeProduto, double preco) {
+        this.validadorString.validaString(fornecedor, "Erro ao cadastrar compra: fornecedor nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(data, "Erro ao cadastrar compra: data nao pode ser vazia ou nula.");
+        this.validadorString.validaString(nomeProduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
+        if (this.contas.containsKey(fornecedor)) {
+            this.contas.get(fornecedor).adicionaProduto(nomeProduto, data, preco);
+        } else {
+            this.contas.put(fornecedor, new Conta(fornecedor, data, nomeProduto, preco));
+        }
+    }
+
+    /**
+     * Metodo que pega o quanto o cliente deve em determinado fornecedor
+     * @param fornecedor - nome do fornecedor -identifcador unico-
+     * @return o quanto o cliente deve me determinado fornecedor
+     */
+    public String getDebito(String fornecedor) {
+        this.validadorString.validaString(fornecedor, "Erro ao recuperar debito: fornecedor nao pode ser vazio ou nulo.");
+
+        if (!this.contas.containsKey(fornecedor)){
+            throw new IllegalArgumentException("Erro ao recuperar debito: cliente nao tem debito com fornecedor.");
+        }
+        return this.contas.get(fornecedor).getDebito();
+    }
+
+    /**
+     * metodo que cria uma representacao textual da conta em determinado fornecedor
+     * @param fornecedor - nome do fornecedor -identificador unico-
+     * @return representacao textual da conta que o cliente tem em determinado fornecedor
+     */
+    public String getContaEmfornecedor(String fornecedor) {
+        this.validadorString.validaString(fornecedor, "Erro ao exibir conta do cliente: fornecedor nao pode ser vazio ou nulo.");
+
+        if (!this.contas.containsKey(fornecedor)){
+            throw new IllegalArgumentException("Erro ao exibir conta do cliente: cliente nao tem nenhuma conta com o fornecedor.");
+        }
+        return ("Cliente: " + this.nome + " | " + this.contas.get(fornecedor).toString());
+    }
+
+    /**
+     * Metodo que lista todas as contas do cliente
+     * @return todas as contas do cliente
+     */
+    public String getConta() {
+        if (this.contas.isEmpty()){
+            throw new IllegalArgumentException("Erro ao exibir contas do cliente: cliente nao tem nenhuma conta.");
+        }
+        ArrayList<String> contasList = new ArrayList<String>();
+
+        for (String fornecedor : this.contas.keySet()){
+            contasList.add(this.contas.get(fornecedor).toString());
+        }
+
+        Collections.sort(contasList);
+
+        String result = "Cliente: " + this.nome + " | ";
+        for (int i = 0; i < contasList.size(); i++){
+            result += contasList.get(i) + " | ";
+        }
+
+        if (!result.equals("")) {
+            result = result.substring(0, result.length() - 3);
+        }
+        return result;
+    }
+
+    /**
      * Compara se dois clientes tem o mesmo cpf
      * @param o - objeto que sera usado na comparacao
      * @return true caso os dois objetos tenham o mesmo cpf e false caso nao
@@ -115,40 +188,5 @@ public class Cliente {
     @Override
     public int hashCode() {
         return Objects.hash(cpf);
-    }
-
-    public void cadastrarCompra(String fornecedor, String data, String nomeProduto, double preco) {
-        if (this.contas.containsKey(fornecedor)){
-            throw new IllegalArgumentException("Fconta ja feita");
-        }
-        this.contas.put(fornecedor, new Conta(fornecedor, data, nomeProduto, preco));
-    }
-
-    public double getDebito(String fornecedor) {
-        return this.contas.get(fornecedor).getDebito();
-    }
-
-    public String getContaEmfornecedor(String fornecedor) {
-        return this.contas.get(fornecedor).toString();
-    }
-
-    public String getConta() {
-        ArrayList<String> contasList = new ArrayList<>();
-
-        for (String fornecedor : this.contas.keySet()){
-            contasList.add(this.contas.get(fornecedor).toString());
-        }
-
-        Collections.sort(contasList);
-
-        String result = "";
-        for (int i = 0; i < contasList.size(); i++){
-            result += contasList.get(i) + System.lineSeparator();
-        }
-
-        if (!result.equals("")) {
-            result = result.substring(0, result.length() - 1);
-        }
-        return result;
     }
 }

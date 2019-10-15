@@ -1,13 +1,13 @@
 import java.util.Objects;
 
 /**
- * Classe criada para Representar um Produto.
- * Um Produto tem como atributos Nome, descricao e preco. O produto usa como identificador
+ * Classe criada para Representar um ProdutoUnitario.
+ * Um ProdutoUnitario tem como atributos Nome, descricao e preco. O produto usa como identificador
  * unico seu nome e sua descricao.
  *
  * @author Caetano Albuquerque - UFCG
  */
-public class Produto {
+public class ProdutoUnitario implements ProdutoInterface {
 
     /**
      * Nome do produto, que junto a sua descricao e o indentificador unico de produto
@@ -35,7 +35,7 @@ public class Produto {
      * @param descricao - descricao do produto que junto ao seu nome e o indentificador unico
      * @param preco - preco inicial do produto
      */
-    public Produto(String nome, String descricao, double preco) {
+    public ProdutoUnitario(String nome, String descricao, double preco) {
         this.validadorString = new Validacao();
 
         this.validadorString.validaString(nome, "Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
@@ -59,7 +59,7 @@ public class Produto {
         return this.nome + " - " + this.descricao + " - R$" + String.format("%.2f",this.preco);
     }
 
-    public void setPreco(double preco) {
+    public void editarProduto(double preco) {
         if (preco < 0){
             throw new IllegalArgumentException("preco invalido.");
         }
@@ -76,7 +76,7 @@ public class Produto {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Produto produto = (Produto) o;
+        ProdutoUnitario produto = (ProdutoUnitario) o;
         return nome.equals(produto.nome) &&
                 descricao.equals(produto.descricao);
     }
@@ -88,5 +88,10 @@ public class Produto {
 
     public double getPreco() {
         return this.preco;
+    }
+
+    @Override
+    public int compareTo(ProdutoInterface o) {
+        return this.toString().compareTo(o.toString());
     }
 }

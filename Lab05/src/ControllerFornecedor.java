@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TransferQueue;
 
 /**
  * Criado para controlar os objetos do tipo Fornecedor
@@ -14,7 +16,7 @@ public class ControllerFornecedor {
     /**
      * Mapa que usa o nome dos fornecedores como chave para acessar objetos do tipo Fornecedor
      */
-    private HashMap<String, Fornecedor> fornecedores;
+    private Map<String, Fornecedor> fornecedores;
 
     /**
      * Objeto que tem funcoes que permite verificar se uma string e null ou composta apenas de espacos
@@ -258,6 +260,11 @@ public class ControllerFornecedor {
 
     }
 
+    /**
+     * Metodo que exibe uma representacao textual de determinado produto, de determinado fornecedor
+     * @param fornecedor - nome do fornecedor -identificador unico-
+     * @return a representacao textual do produto
+     */
     public String exibeProdutosFornecedor(String fornecedor) {
         this.validadorString.validaString(fornecedor, "Erro na exibicao de produto: fornecedor nao pode ser vazio ou nulo.");
         if (!this.fornecedores.containsKey(fornecedor)){
@@ -266,11 +273,87 @@ public class ControllerFornecedor {
         return this.fornecedores.get(fornecedor).listarProdutosComNome();
     }
 
+    /**
+     * Metodo que pega o preco de determinado produto em determinado fornecedor
+     * @param fornecedor - nome do fornecedor -identificador unico-
+     * @param nomeProduto - nome do produto
+     * @param descricaoProduto - descricao do produto
+     * @return o preco do produto
+     */
     public double getPrecoProduto(String fornecedor, String nomeProduto, String descricaoProduto) {
-        if (this.fornecedores.containsKey(fornecedor)) {
-            return this.fornecedores.get(fornecedor).getPreco(nomeProduto, descricaoProduto);
-        }else{
-            throw new IllegalArgumentException("Fornecedor nao cadastrado");
+        this.validadorString.validaString(fornecedor, "Erro ao cadastrar compra: fornecedor nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(nomeProduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricaoProduto, "Erro ao cadastrar compra: descricao do produto nao pode ser vazia ou nula.");
+
+
+        if (!this.fornecedores.containsKey(fornecedor)) {
+            throw new IllegalArgumentException("Erro ao cadastrar compra: fornecedor nao existe.");
+        }else if (!this.fornecedores.get(fornecedor).existeProduto(nomeProduto, descricaoProduto)){
+            throw new IllegalArgumentException("Erro ao cadastrar compra: produto nao existe.");
+        }
+
+        return this.fornecedores.get(fornecedor).getPreco(nomeProduto, descricaoProduto);
+
+    }
+
+    /**
+     * metodo que verifica se algum fornecedor esta cadastrado
+     * @param fornecedor - nome do fornecedor -identificador unico-
+     * @return true caso o fornecedor esteja cadastrado, false caso nao
+     */
+    public boolean existeFornecedo(String fornecedor) {
+        this.validadorString.validaString(fornecedor, "Fornecedor nao pode ser vazio ou nulo");
+        if (this.fornecedores.containsKey(fornecedor)){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Metodo que adiciona combo em determinado fornecedor
+     * @param fornecedor - nome do fornecedor -identificador unico-
+     * @param nomeCombo - nome do combo que esta sendo criado
+     * @param descricaoCombo - descricao do combo que esta sendo criado
+     * @param fator - fator de promocao do combo (porcentagem, valores acima de 0 e menores que 1)
+     * @param produtos - os nomes e as descricoes de todos os produtos que o combo possuira
+     */
+    public void adicionaCombo(String fornecedor, String nomeCombo, String descricaoCombo, double fator, String produtos) {
+        this.validadorString.validaString(fornecedor, "Erro no cadastro de combo: fornecedor nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(nomeCombo, "Erro no cadastro de combo: nome nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricaoCombo, "Erro no cadastro de combo: descricao nao pode ser vazia ou nula.");
+        this.validadorString.validaString(produtos, "Erro no cadastro de combo: combo deve ter produtos.");
+
+        if (fator <= 0 || fator >= 1){
+            throw new IllegalArgumentException("Erro no cadastro de combo: fator invalido.");
+        }
+
+        if (this.fornecedores.containsKey(fornecedor)){
+            this.fornecedores.get(fornecedor).adicionaCombo(nomeCombo, descricaoCombo, fator, produtos);
+        }else {
+            throw new IllegalArgumentException("Erro no cadastro de combo: fornecedor nao existe.");
+        }
+    }
+
+    /**
+     * Metodo que edita o fator promocional do combo
+     * @param fornecedor - nome do fornecedor
+     * @param nomeCombo - nome do combo
+     * @param descricaoCombo - descricao do combo
+     * @param novoFator - o novo fator de desconto
+     */
+    public void editaCombo(String fornecedor, String nomeCombo, String descricaoCombo, double novoFator) {
+        this.validadorString.validaString(fornecedor, "Erro na edicao de combo: fornecedor nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(nomeCombo, "Erro na edicao de combo: nome nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(descricaoCombo, "Erro na edicao de combo: descricao nao pode ser vazia ou nula.");
+
+        if (novoFator < 0 || novoFator > 1){
+            throw new IllegalArgumentException("Erro na edicao de combo: fator invalido.");
+        }
+
+        if (this.fornecedores.containsKey(fornecedor)){
+            this.fornecedores.get(fornecedor).editarCombo(nomeCombo, descricaoCombo, novoFator);
+        }else {
+            throw new IllegalArgumentException("Erro na edicao de combo: fornecedor nao existe.");
         }
     }
 }

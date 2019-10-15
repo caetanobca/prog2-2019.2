@@ -344,4 +344,24 @@ class ControllerFornecedorTest {
             this.controllerFornecedor.removerProduto("Dona Ines", "Bala", "");
         });
     }
+
+    @Test
+    void exibeProdutosFornecedor() {
+    }
+
+    @Test
+    void getPrecoProduto() {
+    }
+
+    @Test
+    void existeFornecedo() {
+    }
+
+    @Test
+    void adicionaCombo() {
+    }
+
+    @Test
+    void editaCombo() {
+    }
 }
