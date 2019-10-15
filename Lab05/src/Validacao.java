@@ -14,4 +14,22 @@ public class Validacao {
         }
 
     }
+
+    public void validaTamanho(String testa, int tamanho, String msg) {
+        if (!(testa.length() == tamanho)){
+            throw new IllegalArgumentException(msg);
+        }
+    }
+
+    public void validaDouble(double testa, double minimo, double maximo, String msg){
+        if(testa < minimo){
+            throw new IllegalArgumentException(msg);
+        }else if(testa > maximo){
+            throw new IllegalArgumentException(msg);
+        }
+    }
+
+    public void validaData(String data, String msg){
+
+    }
 }

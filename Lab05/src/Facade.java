@@ -119,6 +119,27 @@ public class Facade {
     public void editaCombo (String nomeCombo, String descricaoCombo, String fornecedor, double novoFator){
         this.controllerFornecedor.editaCombo(fornecedor, nomeCombo, descricaoCombo, novoFator);
     }
+
+
+
+    //Pagamento
+
+    public void realizaPagamento (String cpf, String fornecedor){
+        this.controllerCliente.realizaPagamento(cpf, fornecedor);
+    }
+
+
+
+    //Listar Compras
+
+    public void ordenaPor(String criterio){
+        this.controllerCliente.ordenaPor(criterio);
+    }
+
+    public String listarCompras(){
+        return this.controllerCliente.listarCompras();
+    }
+
 }
 
 

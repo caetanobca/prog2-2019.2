@@ -189,4 +189,22 @@ public class Cliente {
     public int hashCode() {
         return Objects.hash(cpf);
     }
+
+    public void realizaPagamento(String fornecedor) {
+        this.validadorString.validaString(fornecedor, "Erro no pagamento de conta: fornecedor nao pode ser vazio ou nulo.");
+
+        if (this.contas.containsKey(fornecedor)){
+            this.contas.remove(fornecedor);
+        }else {
+            throw new IllegalArgumentException("Erro no pagamento de conta: nao ha debito do cliente associado a este fornecedor.");
+        }
+    }
+
+    public boolean existeConta() {
+        if (this.contas.isEmpty()){
+            return false;
+        }else {
+            return true;
+        }
+    }
 }

@@ -1,3 +1,4 @@
+import java.awt.image.CropImageFilter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -23,6 +24,8 @@ public class ControllerCliente {
 
     private ControllerFornecedor controllerFornecedor;
 
+    private String criterioOrdenacao;
+
     /**
      * Inicializa o ControllerFornecedor
      */
@@ -30,6 +33,7 @@ public class ControllerCliente {
         this.clientes = new HashMap<String, Cliente>();
         this.validadorString = new Validacao();
         this.controllerFornecedor = controllerFornecedor;
+        this.criterioOrdenacao = "NAODEFINIDO";
     }
 
     /**
@@ -234,5 +238,55 @@ public class ControllerCliente {
             throw new IllegalArgumentException("Erro ao exibir contas do cliente: cliente nao existe.");
         }
         return this.clientes.get(cpf).getConta();
+    }
+
+    public void realizaPagamento(String cpf, String fornecedor) {
+        this.validadorString.validaString(cpf, "Erro no pagamento de conta: cpf nao pode ser vazio ou nulo.");
+        this.validadorString.validaString(fornecedor, "Erro no pagamento de conta: fornecedor nao pode ser vazio ou nulo.");
+        this.validadorString.validaTamanho(cpf, 11, "Erro no pagamento de conta: cpf invalido.");
+
+        if (!this.clientes.containsKey(cpf)){
+            throw new IllegalArgumentException("Erro no pagamento de conta: cliente nao existe.");
+        }else if (!this.controllerFornecedor.existeFornecedo(fornecedor)){
+            throw new IllegalArgumentException("Erro no pagamento de conta: fornecedor nao existe.");
+        }
+
+        this.clientes.get(cpf).realizaPagamento(fornecedor);
+    }
+
+    public void ordenaPor(String criterio) {
+        this.validadorString.validaString(criterio, "Erro na listagem de compras: criterio nao pode ser vazio ou nulo.");
+
+        if (criterio.toUpperCase().equals("CLIENTE") || criterio.toUpperCase().equals("FORNECEDOR") || criterio.toUpperCase().equals("DATA")){
+            this.criterioOrdenacao = criterio;
+        }else {
+            throw new IllegalArgumentException("Erro na listagem de compras: criterio nao oferecido pelo sistema.");
+        }
+    }
+
+    public String listarCompras() {
+        if (this.criterioOrdenacao.equals("NAODEFINIDO")){
+            throw new IllegalArgumentException("Erro na listagem de compras: criterio ainda nao definido pelo sistema.");
+        }
+
+        ArrayList<String> clienteList = new ArrayList<String>();
+
+        for (String cpf : this.clientes.keySet()){
+            clienteList.add(cpf);
+        }
+
+        Collections.sort(clienteList);
+
+        String result = "";
+
+        for (int i = 0; i < clienteList.size(); i++){
+            result += this.clientes.get(i).getConta() + " | ";
+        }
+
+        if (!result.equals("")) {
+            result = result.substring(0, result.length() - 3);
+        }
+
+        return result;
     }
 }
