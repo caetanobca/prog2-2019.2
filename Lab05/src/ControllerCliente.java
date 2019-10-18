@@ -1,4 +1,3 @@
-import java.awt.image.CropImageFilter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -24,7 +23,7 @@ public class ControllerCliente {
 
     private ControllerFornecedor controllerFornecedor;
 
-    private String criterioOrdenacao;
+    private CriterioOrdenacao criterioOrdenacao;
 
     /**
      * Inicializa o ControllerFornecedor
@@ -33,7 +32,7 @@ public class ControllerCliente {
         this.clientes = new HashMap<String, Cliente>();
         this.validadorString = new Validacao();
         this.controllerFornecedor = controllerFornecedor;
-        this.criterioOrdenacao = "NAODEFINIDO";
+        this.criterioOrdenacao = CriterioOrdenacao.NAODEFINIDO;
     }
 
     /**
@@ -176,7 +175,7 @@ public class ControllerCliente {
             preco = this.controllerFornecedor.getPrecoProduto(fornecedor, nomeProduto, descricaoProduto);
         }
 
-        this.clientes.get(cpf).cadastrarCompra(fornecedor, data, nomeProduto, preco);
+        this.clientes.get(cpf).cadastrarCompra(fornecedor, data, nomeProduto, descricaoProduto, preco);
 
 
 
@@ -254,34 +253,54 @@ public class ControllerCliente {
         this.clientes.get(cpf).realizaPagamento(fornecedor);
     }
 
+
+
     public void ordenaPor(String criterio) {
         this.validadorString.validaString(criterio, "Erro na listagem de compras: criterio nao pode ser vazio ou nulo.");
 
-        if (criterio.toUpperCase().equals("CLIENTE") || criterio.toUpperCase().equals("FORNECEDOR") || criterio.toUpperCase().equals("DATA")){
-            this.criterioOrdenacao = criterio;
+        if (criterio.toUpperCase().equals("CLIENTE")) {
+            this.criterioOrdenacao = CriterioOrdenacao.CLIENTE;
+        }else if (criterio.toUpperCase().equals("FORNECEDOR")) {
+            this.criterioOrdenacao = CriterioOrdenacao.FORNECEDOR;
+        }else if (criterio.toUpperCase().equals("DATA")){
+            this.criterioOrdenacao = CriterioOrdenacao.DATA;
         }else {
             throw new IllegalArgumentException("Erro na listagem de compras: criterio nao oferecido pelo sistema.");
         }
     }
 
     public String listarCompras() {
-        if (this.criterioOrdenacao.equals("NAODEFINIDO")){
+        if (this.criterioOrdenacao == CriterioOrdenacao.NAODEFINIDO){
             throw new IllegalArgumentException("Erro na listagem de compras: criterio ainda nao definido pelo sistema.");
         }
-
-        ArrayList<String> clienteList = new ArrayList<String>();
-
-        for (String cpf : this.clientes.keySet()){
-            clienteList.add(cpf);
-        }
-
-        Collections.sort(clienteList);
+        ArrayList<String[]> compras= new ArrayList<>();
 
         String result = "";
+        ArrayList<Cliente> clienteList = new ArrayList<Cliente>();
+
+        for (String cpf : this.clientes.keySet()){
+            clienteList.add(this.clientes.get(cpf));
+        }
 
         for (int i = 0; i < clienteList.size(); i++){
-            result += this.clientes.get(i).getConta() + " | ";
+            if (clienteList.get(i).existeConta()) {
+                compras.add(clienteList.get(i).getContaPorCliente(this.criterioOrdenacao).split(", "));
+            }
         }
+
+//        if (this.criterioOrdenacao == CriterioOrdenacao.CLIENTE){
+//            Collections.sort(clienteList);
+//
+//            for (int i = 0; i < clienteList.size(); i++){
+//                if (clienteList.get(i).existeConta()) {
+//                    compras.add(clienteList.get(i).getContaPorCliente(this.criterioOrdenacao).split(", "));
+//
+//                    result += clienteList.get(i).getContaPorCliente(this.criterioOrdenacao);
+//                }
+//            }
+//        }else if (this.criterioOrdenacao == CriterioOrdenacao.FORNECEDOR){
+//
+//        }
 
         if (!result.equals("")) {
             result = result.substring(0, result.length() - 3);

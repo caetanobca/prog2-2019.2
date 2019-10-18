@@ -9,7 +9,7 @@ import java.util.Objects;
  *
  * @author Caetano Albuquerque - UFCG
  */
-public class Cliente {
+public class Cliente implements Comparable<Cliente>{
 
     /**
      * CPF do cliente que e o seu indentificador unico
@@ -106,14 +106,14 @@ public class Cliente {
      * @param nomeProduto - nome do produto comprado
      * @param preco - preco do produto comprad
      */
-    public void cadastrarCompra(String fornecedor, String data, String nomeProduto, double preco) {
+    public void cadastrarCompra(String fornecedor, String data, String nomeProduto, String descricaoProduto, double preco) {
         this.validadorString.validaString(fornecedor, "Erro ao cadastrar compra: fornecedor nao pode ser vazio ou nulo.");
         this.validadorString.validaString(data, "Erro ao cadastrar compra: data nao pode ser vazia ou nula.");
         this.validadorString.validaString(nomeProduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
         if (this.contas.containsKey(fornecedor)) {
-            this.contas.get(fornecedor).adicionaProduto(nomeProduto, data, preco);
+            this.contas.get(fornecedor).adicionaProduto(nomeProduto, descricaoProduto , data, preco);
         } else {
-            this.contas.put(fornecedor, new Conta(fornecedor, data, nomeProduto, preco));
+            this.contas.put(fornecedor, new Conta(fornecedor, data, nomeProduto, descricaoProduto, preco));
         }
     }
 
@@ -207,4 +207,30 @@ public class Cliente {
             return true;
         }
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    @Override
+    public int compareTo(Cliente o) {
+        return this.nome.compareTo(o.getNome());
+    }
+
+    public String getContaPorCliente(CriterioOrdenacao criterioOrdenacao) {
+        String result = "";
+        ArrayList<String> fornecedorList = new ArrayList<String>();
+
+        for (String fornecedor : this.contas.keySet()){
+            fornecedorList.add(fornecedor);
+        }
+
+        Collections.sort(fornecedorList);
+
+        for (int i = 0; i < fornecedorList.size(); i++){
+            result += this.contas.get(fornecedorList.get(i)).getContaOrdenada(this.nome);
+        }
+        return result;
+    }
 }
+
