@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a949bfdd-df67-43a3-af49-dab1fa25f771" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ComparadorPorData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ComparadorPorFornecedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ComparadorPorNome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab05/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/Conta.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab05/ControllerCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/ControllerCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/META-INF/Lab05.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Combo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Combo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComparadorPorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparadorPorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComparadorPorFornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparadorPorFornecedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComparadorPorNome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparadorPorNome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ControllerCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControllerCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ordena.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,89 +25,18 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="2062511658">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1560" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1560" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="Lab05" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ControllerCliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="312" column="9" lean-forward="true" selection-start-line="312" selection-start-column="9" selection-end-line="312" selection-end-column="9" />
-              <folding>
-                <element signature="docComment;class#ControllerCliente#0" />
-                <element signature="docComment;field#clientes#0;class#ControllerCliente#0" />
-                <element signature="docComment;field#validadorString#0;class#ControllerCliente#0" />
-                <element signature="docComment;field#controllerFornecedor#0;class#ControllerCliente#0" />
-                <element signature="docComment;field#criterioOrdenacao#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#ControllerCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#cadastraCliente#0;class#ControllerCliente#0" />
-                <element signature="method#cadastraCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#exibeCliente#0;class#ControllerCliente#0" />
-                <element signature="method#exibeCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#listarClientes#0;class#ControllerCliente#0" />
-                <element signature="method#listarClientes#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#editarCliente#0;class#ControllerCliente#0" />
-                <element signature="method#editarCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#removerCliente#0;class#ControllerCliente#0" />
-                <element signature="method#removerCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#cadastraCompra#0;class#ControllerCliente#0" />
-                <element signature="method#cadastraCompra#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#getDebito#0;class#ControllerCliente#0" />
-                <element signature="method#getDebito#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#getContaEmFornecedor#0;class#ControllerCliente#0" />
-                <element signature="method#getContaEmFornecedor#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#contaCliente#0;class#ControllerCliente#0" />
-                <element signature="method#contaCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#realizaPagamento#0;class#ControllerCliente#0" />
-                <element signature="method#realizaPagamento#0;class#ControllerCliente#0" />
-                <element signature="method#ordenaPor#0;class#ControllerCliente#0" />
-                <element signature="e#13339#13347#0" expanded="true" />
-                <element signature="e#13434#13443#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="248" column="10" selection-start-line="248" selection-start-column="10" selection-end-line="248" selection-end-column="10" />
+            <state relative-caret-position="833">
+              <caret line="109" column="123" selection-start-line="109" selection-start-column="123" selection-end-line="109" selection-end-column="123" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#Cliente#0" />
                 <element signature="docComment;field#cpf#0;class#Cliente#0" />
                 <element signature="docComment;field#nome#0;class#Cliente#0" />
                 <element signature="docComment;field#email#0;class#Cliente#0" />
@@ -126,21 +53,70 @@
                 <element signature="docComment;method#setLocalizacao#0;class#Cliente#0" />
                 <element signature="method#setLocalizacao#0;class#Cliente#0" />
                 <element signature="docComment;method#cadastrarCompra#0;class#Cliente#0" />
+                <element signature="method#cadastrarCompra#0;class#Cliente#0" />
                 <element signature="docComment;method#getDebito#0;class#Cliente#0" />
                 <element signature="method#getDebito#0;class#Cliente#0" />
                 <element signature="docComment;method#getContaEmfornecedor#0;class#Cliente#0" />
                 <element signature="method#getContaEmfornecedor#0;class#Cliente#0" />
                 <element signature="docComment;method#getConta#0;class#Cliente#0" />
                 <element signature="method#getConta#0;class#Cliente#0" />
-                <element signature="docComment;method#equals#0;class#Cliente#0" />
-                <element signature="method#equals#0;class#Cliente#0" />
                 <element signature="docComment;method#realizaPagamento#0;class#Cliente#0" />
                 <element signature="method#realizaPagamento#0;class#Cliente#0" />
                 <element signature="docComment;method#existeConta#0;class#Cliente#0" />
                 <element signature="method#existeConta#0;class#Cliente#0" />
-                <element signature="docComment;method#compareTo#0;class#Cliente#0" />
-                <element signature="e#9306#9314#0" expanded="true" />
-                <element signature="e#9340#9348#0" expanded="true" />
+                <element signature="docComment;method#getCompras#0;class#Cliente#0" />
+                <element signature="method#getCompras#0;class#Cliente#0" />
+                <element signature="docComment;method#equals#0;class#Cliente#0" />
+                <element signature="method#equals#0;class#Cliente#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Combo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+              <folding>
+                <element signature="docComment;field#nome#0;class#Combo#0" />
+                <element signature="docComment;field#descricao#0;class#Combo#0" />
+                <element signature="docComment;field#preco#0;class#Combo#0" />
+                <element signature="docComment;field#fator#0;class#Combo#0" />
+                <element signature="docComment;field#validadorString#0;class#Combo#0" />
+                <element signature="docComment;method#Combo#0;class#Combo#0" />
+                <element signature="method#Combo#0;class#Combo#0" />
+                <element signature="docComment;method#toString#0;class#Combo#0" />
+                <element signature="method#toString#0;class#Combo#0" />
+                <element signature="docComment;method#editarProduto#0;class#Combo#0" />
+                <element signature="method#editarProduto#0;class#Combo#0" />
+                <element signature="docComment;method#getPreco#0;class#Combo#0" />
+                <element signature="docComment;method#compareTo#0;class#Combo#0" />
+                <element signature="method#compareTo#0;class#Combo#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Compra.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-549">
+              <caret column="44" selection-start-column="44" selection-end-column="44" />
+              <folding>
+                <element signature="docComment;field#validador#0;class#Compra#0" />
+                <element signature="docComment;field#nomeProduto#0;class#Compra#0" />
+                <element signature="docComment;field#descricaoProduto#0;class#Compra#0" />
+                <element signature="docComment;field#data#0;class#Compra#0" />
+                <element signature="docComment;field#cliente#0;class#Compra#0" />
+                <element signature="docComment;field#fornecedor#0;class#Compra#0" />
+                <element signature="docComment;method#Compra#0;class#Compra#0" />
+                <element signature="method#Compra#0;class#Compra#0" />
+                <element signature="docComment;method#getDescricaoProduto#0;class#Compra#0" />
+                <element signature="docComment;method#getData#0;class#Compra#0" />
+                <element signature="docComment;method#getCliente#0;class#Compra#0" />
+                <element signature="docComment;method#getFornecedor#0;class#Compra#0" />
+                <element signature="docComment;method#toString#0;class#Compra#0" />
               </folding>
             </state>
           </provider>
@@ -149,67 +125,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Conta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+            <state relative-caret-position="161">
+              <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;field#fornecedor#0;class#Conta#0" />
+                <element signature="docComment;field#debito#0;class#Conta#0" />
+                <element signature="docComment;field#compras#0;class#Conta#0" />
+                <element signature="docComment;field#validador#0;class#Conta#0" />
+                <element signature="docComment;field#cliente#0;class#Conta#0" />
+                <element signature="docComment;method#Conta#0;class#Conta#0" />
+                <element signature="method#Conta#0;class#Conta#0" />
+                <element signature="docComment;method#adicionaProduto#0;class#Conta#0" />
+                <element signature="method#adicionaProduto#0;class#Conta#0" />
+                <element signature="docComment;method#getDebito#0;class#Conta#0" />
+                <element signature="docComment;method#getCompras#0;class#Conta#0" />
+                <element signature="docComment;method#getNumCompras#0;class#Conta#0" />
+                <element signature="docComment;method#toString#0;class#Conta#0" />
                 <element signature="method#toString#0;class#Conta#0" />
+                <element signature="docComment;method#equals#0;class#Conta#0" />
                 <element signature="method#equals#0;class#Conta#0" />
-                <element signature="e#2883#2884#0" expanded="true" />
-                <element signature="e#2907#2908#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Compra.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1895#1896#0" expanded="true" />
-                <element signature="e#1921#1922#0" expanded="true" />
-                <element signature="e#2261#2262#0" expanded="true" />
-                <element signature="e#2294#2295#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ComparadorPorNome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ComparadorPorFornecedor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="17" />
-              <folding>
-                <element signature="e#129#130#0" expanded="true" />
-                <element signature="e#153#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ComparadorPorData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="17" />
-              <folding>
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#148#149#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -262,8 +197,6 @@
         <option value="$PROJECT_DIR$/Tests/ClienteTest.java" />
         <option value="$PROJECT_DIR$/Tests/ControllerClienteTest.java" />
         <option value="$PROJECT_DIR$/Tests/ControllerFornecedorTest.java" />
-        <option value="$PROJECT_DIR$/src/ProdutoInterface.java" />
-        <option value="$PROJECT_DIR$/src/ProdutoUnitario.java" />
         <option value="$PROJECT_DIR$/src/TipoProduto.java" />
         <option value="$PROJECT_DIR$/src/Fornecedor.java" />
         <option value="$PROJECT_DIR$/src/Facade.java" />
@@ -272,23 +205,25 @@
         <option value="$PROJECT_DIR$/src/Compras.java" />
         <option value="$PROJECT_DIR$/src/CriterioOrdenacao.java" />
         <option value="$PROJECT_DIR$/AcceptTests/use_case_8.txt" />
-        <option value="$PROJECT_DIR$/src/Combo.java" />
         <option value="$PROJECT_DIR$/src/Ordena.java" />
-        <option value="$PROJECT_DIR$/src/ComparadorPorFornecedor.java" />
         <option value="$PROJECT_DIR$/src/ComparadorPorData.java" />
-        <option value="$PROJECT_DIR$/src/Conta.java" />
-        <option value="$PROJECT_DIR$/src/Cliente.java" />
-        <option value="$PROJECT_DIR$/src/ControllerCliente.java" />
+        <option value="$PROJECT_DIR$/src/ComparadorPorFornecedor.java" />
         <option value="$PROJECT_DIR$/src/ComparadorPorNome.java" />
+        <option value="$PROJECT_DIR$/src/ControllerCliente.java" />
+        <option value="$PROJECT_DIR$/src/ProdutoUnitario.java" />
+        <option value="$PROJECT_DIR$/src/ProdutoInterface.java" />
         <option value="$PROJECT_DIR$/src/Compra.java" />
+        <option value="$PROJECT_DIR$/src/Combo.java" />
+        <option value="$PROJECT_DIR$/src/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/Conta.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="66" />
-    <option name="y" value="24" />
-    <option name="width" value="927" />
-    <option name="height" value="1056" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="983" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -310,24 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
-          <expand>
-            <path>
-              <item name="Lab05" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Lab05" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="Lab05" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Lab05" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="Tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -358,6 +275,23 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
+          <expand>
+            <path>
+              <item name="Lab05" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Lab05" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Lab05" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Lab05" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="Tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -518,19 +452,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49759614" visible="true" weight="0.13890426" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49462366" visible="true" weight="0.14089069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50240386" side_tool="true" weight="0.13522267" />
+      <window_info id="Favorites" order="6" sideWeight="0.50537634" side_tool="true" weight="0.14089069" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26054054" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25932506" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -538,7 +472,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50040483" side_tool="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49959514" weight="0.3285968" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49959514" weight="0.17513514" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49959514" weight="0.1740675" />
       <window_info anchor="right" id="Maven" order="0" />
       <window_info anchor="right" id="Coverage" order="1" side_tool="true" weight="0.32955465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -552,38 +486,6 @@
       <window_info anchor="right" id="PlantUML" order="10" weight="0.41862348" />
       <window_info anchor="right" x="603" y="91" width="576" height="548" id="simpleUML" order="11" side_tool="true" weight="0.46639675" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13337022" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24972972" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50040483" side_tool="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49959514" weight="0.3285968" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49959514" weight="0.1758437" />
-      <window_info anchor="right" id="Maven" order="0" />
-      <window_info anchor="right" id="Coverage" order="1" side_tool="true" weight="0.32955465" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info anchor="right" id="PlantUML" order="10" weight="0.41862348" />
-      <window_info anchor="right" x="603" y="91" width="576" height="548" id="simpleUML" order="11" side_tool="true" weight="0.46639675" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -610,9 +512,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Lab05$ProdutoTest.ic" NAME="ProdutoTest Coverage Results" MODIFIED="1569961620542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -671,13 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="96" column="31" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="77" column="45" lean-forward="true" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -745,20 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProdutoInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="69" selection-start-column="53" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_7.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="94" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_5.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-483">
@@ -792,31 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fornecedor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4539">
-          <caret line="273" column="63" selection-start-line="273" selection-start-column="58" selection-end-line="273" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProdutoUnitario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="94" column="36" selection-start-line="93" selection-start-column="44" selection-end-line="95" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_8.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Combo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
@@ -841,41 +712,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ordena.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComparadorPorFornecedor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="17" />
-          <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#toString#0;class#Conta#0" />
-            <element signature="method#equals#0;class#Conta#0" />
-            <element signature="e#2883#2884#0" expanded="true" />
-            <element signature="e#2907#2908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ordena.java" />
     <entry file="file://$PROJECT_DIR$/src/Facade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -913,63 +750,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cliente.java">
+    <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_6.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="248" column="10" selection-start-line="248" selection-start-column="10" selection-end-line="248" selection-end-column="10" />
+        <state relative-caret-position="1309">
+          <caret line="77" column="45" lean-forward="true" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_7.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="94" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComparadorPorNome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComparadorPorFornecedor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fornecedor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProdutoUnitario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Cliente#0" />
-            <element signature="docComment;field#cpf#0;class#Cliente#0" />
-            <element signature="docComment;field#nome#0;class#Cliente#0" />
-            <element signature="docComment;field#email#0;class#Cliente#0" />
-            <element signature="docComment;field#localizacao#0;class#Cliente#0" />
-            <element signature="docComment;field#validadorString#0;class#Cliente#0" />
-            <element signature="docComment;field#contas#0;class#Cliente#0" />
-            <element signature="docComment;method#Cliente#0;class#Cliente#0" />
-            <element signature="method#Cliente#0;class#Cliente#0" />
-            <element signature="docComment;method#toString#0;class#Cliente#0" />
-            <element signature="docComment;method#setNome#0;class#Cliente#0" />
-            <element signature="method#setNome#0;class#Cliente#0" />
-            <element signature="docComment;method#setEmail#0;class#Cliente#0" />
-            <element signature="method#setEmail#0;class#Cliente#0" />
-            <element signature="docComment;method#setLocalizacao#0;class#Cliente#0" />
-            <element signature="method#setLocalizacao#0;class#Cliente#0" />
-            <element signature="docComment;method#cadastrarCompra#0;class#Cliente#0" />
-            <element signature="docComment;method#getDebito#0;class#Cliente#0" />
-            <element signature="method#getDebito#0;class#Cliente#0" />
-            <element signature="docComment;method#getContaEmfornecedor#0;class#Cliente#0" />
-            <element signature="method#getContaEmfornecedor#0;class#Cliente#0" />
-            <element signature="docComment;method#getConta#0;class#Cliente#0" />
-            <element signature="method#getConta#0;class#Cliente#0" />
-            <element signature="docComment;method#equals#0;class#Cliente#0" />
-            <element signature="method#equals#0;class#Cliente#0" />
-            <element signature="docComment;method#realizaPagamento#0;class#Cliente#0" />
-            <element signature="method#realizaPagamento#0;class#Cliente#0" />
-            <element signature="docComment;method#existeConta#0;class#Cliente#0" />
-            <element signature="method#existeConta#0;class#Cliente#0" />
-            <element signature="docComment;method#compareTo#0;class#Cliente#0" />
-            <element signature="e#9306#9314#0" expanded="true" />
-            <element signature="e#9340#9348#0" expanded="true" />
+            <element signature="e#2918#2919#0" expanded="true" />
+            <element signature="e#2951#2952#0" expanded="true" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProdutoInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComparadorPorData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Combo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding>
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
+            <element signature="docComment;field#nome#0;class#Combo#0" />
+            <element signature="docComment;field#descricao#0;class#Combo#0" />
+            <element signature="docComment;field#preco#0;class#Combo#0" />
+            <element signature="docComment;field#fator#0;class#Combo#0" />
+            <element signature="docComment;field#validadorString#0;class#Combo#0" />
+            <element signature="docComment;method#Combo#0;class#Combo#0" />
+            <element signature="method#Combo#0;class#Combo#0" />
+            <element signature="docComment;method#toString#0;class#Combo#0" />
+            <element signature="method#toString#0;class#Combo#0" />
+            <element signature="docComment;method#editarProduto#0;class#Combo#0" />
+            <element signature="method#editarProduto#0;class#Combo#0" />
+            <element signature="docComment;method#getPreco#0;class#Combo#0" />
+            <element signature="docComment;method#compareTo#0;class#Combo#0" />
+            <element signature="method#compareTo#0;class#Combo#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ControllerCliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="312" column="9" lean-forward="true" selection-start-line="312" selection-start-column="9" selection-end-line="312" selection-end-column="9" />
+        <state relative-caret-position="148">
+          <caret line="318" column="54" lean-forward="true" selection-start-line="318" selection-start-column="54" selection-end-line="318" selection-end-column="54" />
           <folding>
             <element signature="docComment;class#ControllerCliente#0" />
             <element signature="docComment;field#clientes#0;class#ControllerCliente#0" />
@@ -997,33 +866,96 @@
             <element signature="method#contaCliente#0;class#ControllerCliente#0" />
             <element signature="docComment;method#realizaPagamento#0;class#ControllerCliente#0" />
             <element signature="method#realizaPagamento#0;class#ControllerCliente#0" />
-            <element signature="method#ordenaPor#0;class#ControllerCliente#0" />
-            <element signature="e#13339#13347#0" expanded="true" />
-            <element signature="e#13434#13443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="109" column="123" selection-start-line="109" selection-start-column="123" selection-end-line="109" selection-end-column="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#cpf#0;class#Cliente#0" />
+            <element signature="docComment;field#nome#0;class#Cliente#0" />
+            <element signature="docComment;field#email#0;class#Cliente#0" />
+            <element signature="docComment;field#localizacao#0;class#Cliente#0" />
+            <element signature="docComment;field#validadorString#0;class#Cliente#0" />
+            <element signature="docComment;field#contas#0;class#Cliente#0" />
+            <element signature="docComment;method#Cliente#0;class#Cliente#0" />
+            <element signature="method#Cliente#0;class#Cliente#0" />
+            <element signature="docComment;method#toString#0;class#Cliente#0" />
+            <element signature="docComment;method#setNome#0;class#Cliente#0" />
+            <element signature="method#setNome#0;class#Cliente#0" />
+            <element signature="docComment;method#setEmail#0;class#Cliente#0" />
+            <element signature="method#setEmail#0;class#Cliente#0" />
+            <element signature="docComment;method#setLocalizacao#0;class#Cliente#0" />
+            <element signature="method#setLocalizacao#0;class#Cliente#0" />
+            <element signature="docComment;method#cadastrarCompra#0;class#Cliente#0" />
+            <element signature="method#cadastrarCompra#0;class#Cliente#0" />
+            <element signature="docComment;method#getDebito#0;class#Cliente#0" />
+            <element signature="method#getDebito#0;class#Cliente#0" />
+            <element signature="docComment;method#getContaEmfornecedor#0;class#Cliente#0" />
+            <element signature="method#getContaEmfornecedor#0;class#Cliente#0" />
+            <element signature="docComment;method#getConta#0;class#Cliente#0" />
+            <element signature="method#getConta#0;class#Cliente#0" />
+            <element signature="docComment;method#realizaPagamento#0;class#Cliente#0" />
+            <element signature="method#realizaPagamento#0;class#Cliente#0" />
+            <element signature="docComment;method#existeConta#0;class#Cliente#0" />
+            <element signature="method#existeConta#0;class#Cliente#0" />
+            <element signature="docComment;method#getCompras#0;class#Cliente#0" />
+            <element signature="method#getCompras#0;class#Cliente#0" />
+            <element signature="docComment;method#equals#0;class#Cliente#0" />
+            <element signature="method#equals#0;class#Cliente#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#fornecedor#0;class#Conta#0" />
+            <element signature="docComment;field#debito#0;class#Conta#0" />
+            <element signature="docComment;field#compras#0;class#Conta#0" />
+            <element signature="docComment;field#validador#0;class#Conta#0" />
+            <element signature="docComment;field#cliente#0;class#Conta#0" />
+            <element signature="docComment;method#Conta#0;class#Conta#0" />
+            <element signature="method#Conta#0;class#Conta#0" />
+            <element signature="docComment;method#adicionaProduto#0;class#Conta#0" />
+            <element signature="method#adicionaProduto#0;class#Conta#0" />
+            <element signature="docComment;method#getDebito#0;class#Conta#0" />
+            <element signature="docComment;method#getCompras#0;class#Conta#0" />
+            <element signature="docComment;method#getNumCompras#0;class#Conta#0" />
+            <element signature="docComment;method#toString#0;class#Conta#0" />
+            <element signature="method#toString#0;class#Conta#0" />
+            <element signature="docComment;method#equals#0;class#Conta#0" />
+            <element signature="method#equals#0;class#Conta#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Compra.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        <state relative-caret-position="-549">
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1895#1896#0" expanded="true" />
-            <element signature="e#1921#1922#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-            <element signature="e#2294#2295#0" expanded="true" />
+            <element signature="docComment;field#validador#0;class#Compra#0" />
+            <element signature="docComment;field#nomeProduto#0;class#Compra#0" />
+            <element signature="docComment;field#descricaoProduto#0;class#Compra#0" />
+            <element signature="docComment;field#data#0;class#Compra#0" />
+            <element signature="docComment;field#cliente#0;class#Compra#0" />
+            <element signature="docComment;field#fornecedor#0;class#Compra#0" />
+            <element signature="docComment;method#Compra#0;class#Compra#0" />
+            <element signature="method#Compra#0;class#Compra#0" />
+            <element signature="docComment;method#getDescricaoProduto#0;class#Compra#0" />
+            <element signature="docComment;method#getData#0;class#Compra#0" />
+            <element signature="docComment;method#getCliente#0;class#Compra#0" />
+            <element signature="docComment;method#getFornecedor#0;class#Compra#0" />
+            <element signature="docComment;method#toString#0;class#Compra#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComparadorPorNome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>

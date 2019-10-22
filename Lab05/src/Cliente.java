@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Objects;
+
 /**
  * Classe criada para Representar um Cliente.
  * Um Cliente tem com atributos CPF, Nome, Email e
@@ -9,7 +10,7 @@ import java.util.Objects;
  *
  * @author Caetano Albuquerque - UFCG
  */
-public class Cliente implements Comparable<Cliente>{
+public class Cliente {
 
     /**
      * CPF do cliente que e o seu indentificador unico
@@ -34,7 +35,7 @@ public class Cliente implements Comparable<Cliente>{
     /**
      * Objeto que tem funcoes que permite verificar se uma string e null ou composta apenas de espacos
      */
-    private Validacao validadorString;
+    private Validacao validador;
 
     /**
      * Mapa que guarda todas contas do clientes nos fornecedores
@@ -49,12 +50,12 @@ public class Cliente implements Comparable<Cliente>{
      * @param localizacao - local onde o cliente estuda/trabalha na universidade
      */
     public Cliente (String cpf, String nome, String email, String localizacao){
-        this.validadorString = new Validacao();
+        this.validador = new Validacao();
 
-        this.validadorString.validaString(cpf, "Erro no cadastro do cliente: cpf nao pode ser vazio ou nulo.");
-        this.validadorString.validaString(nome, "Erro no cadastro do cliente: nome nao pode ser vazio ou nulo.");
-        this.validadorString.validaString(email, "Erro no cadastro do cliente: email nao pode ser vazio ou nulo.");
-        this.validadorString.validaString(localizacao, "Erro no cadastro do cliente: localizacao nao pode ser vazia ou nula.");
+        this.validador.validaString(cpf, "Erro no cadastro do cliente: cpf nao pode ser vazio ou nulo.");
+        this.validador.validaString(nome, "Erro no cadastro do cliente: nome nao pode ser vazio ou nulo.");
+        this.validador.validaString(email, "Erro no cadastro do cliente: email nao pode ser vazio ou nulo.");
+        this.validador.validaString(localizacao, "Erro no cadastro do cliente: localizacao nao pode ser vazia ou nula.");
 
         this.cpf = cpf;
         this.nome = nome;
@@ -77,7 +78,7 @@ public class Cliente implements Comparable<Cliente>{
      * @param nome - novo nome
      */
     public void setNome(String nome) {
-        this.validadorString.validaString(nome, "Erro na edicao do cliente: novo valor nao pode ser vazio ou nulo.");
+        this.validador.validaString(nome, "Erro na edicao do cliente: novo valor nao pode ser vazio ou nulo.");
         this.nome = nome;
     }
 
@@ -86,7 +87,7 @@ public class Cliente implements Comparable<Cliente>{
      * @param email - novo email
      */
     public void setEmail(String email) {
-        this.validadorString.validaString(email, "Erro na edicao do cliente: novo valor nao pode ser vazio ou nulo.");
+        this.validador.validaString(email, "Erro na edicao do cliente: novo valor nao pode ser vazio ou nulo.");
         this.email = email;
     }
 
@@ -95,7 +96,7 @@ public class Cliente implements Comparable<Cliente>{
      * @param localizacao - novo local
      */
     public void setLocalizacao(String localizacao) {
-        this.validadorString.validaString(localizacao, "Erro na edicao do cliente: novo valor nao pode ser vazio ou nulo.");
+        this.validador.validaString(localizacao, "Erro na edicao do cliente: novo valor nao pode ser vazio ou nulo.");
         this.localizacao = localizacao;
     }
 
@@ -107,11 +108,11 @@ public class Cliente implements Comparable<Cliente>{
      * @param preco - preco do produto comprad
      */
     public void cadastrarCompra(String fornecedor, String data, String nomeProduto, String descricaoProduto, double preco) {
-        this.validadorString.validaString(fornecedor, "Erro ao cadastrar compra: fornecedor nao pode ser vazio ou nulo.");
-        this.validadorString.validaString(data, "Erro ao cadastrar compra: data nao pode ser vazia ou nula.");
-        this.validadorString.validaString(nomeProduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
+        this.validador.validaString(fornecedor, "Erro ao cadastrar compra: fornecedor nao pode ser vazio ou nulo.");
+        this.validador.validaString(data, "Erro ao cadastrar compra: data nao pode ser vazia ou nula.");
+        this.validador.validaString(nomeProduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
         if (this.contas.containsKey(fornecedor)) {
-            this.contas.get(fornecedor).adicionaProduto(nomeProduto, descricaoProduto , data, preco, this.nome);
+            this.contas.get(fornecedor).adicionaProduto(nomeProduto, descricaoProduto , data, preco);
         } else {
             this.contas.put(fornecedor, new Conta(fornecedor, data, nomeProduto, descricaoProduto, preco, this.nome));
         }
@@ -123,7 +124,7 @@ public class Cliente implements Comparable<Cliente>{
      * @return o quanto o cliente deve me determinado fornecedor
      */
     public String getDebito(String fornecedor) {
-        this.validadorString.validaString(fornecedor, "Erro ao recuperar debito: fornecedor nao pode ser vazio ou nulo.");
+        this.validador.validaString(fornecedor, "Erro ao recuperar debito: fornecedor nao pode ser vazio ou nulo.");
 
         if (!this.contas.containsKey(fornecedor)){
             throw new IllegalArgumentException("Erro ao recuperar debito: cliente nao tem debito com fornecedor.");
@@ -137,7 +138,7 @@ public class Cliente implements Comparable<Cliente>{
      * @return representacao textual da conta que o cliente tem em determinado fornecedor
      */
     public String getContaEmfornecedor(String fornecedor) {
-        this.validadorString.validaString(fornecedor, "Erro ao exibir conta do cliente: fornecedor nao pode ser vazio ou nulo.");
+        this.validador.validaString(fornecedor, "Erro ao exibir conta do cliente: fornecedor nao pode ser vazio ou nulo.");
 
         if (!this.contas.containsKey(fornecedor)){
             throw new IllegalArgumentException("Erro ao exibir conta do cliente: cliente nao tem nenhuma conta com o fornecedor.");
@@ -173,29 +174,11 @@ public class Cliente implements Comparable<Cliente>{
     }
 
     /**
-     * Compara se dois clientes tem o mesmo cpf
-     * @param o - objeto que sera usado na comparacao
-     * @return true caso os dois objetos tenham o mesmo cpf e false caso nao
-     */
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Cliente cliente = (Cliente) o;
-        return cpf.equals(cliente.cpf);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(cpf);
-    }
-
-    /**
      * metodo que realiza o pagamento de todos os debitos que o cliente tem em um deterrminado fornecedor
      * @param fornecedor - nome do fornecedor que sera pago
      */
     public void realizaPagamento(String fornecedor) {
-        this.validadorString.validaString(fornecedor, "Erro no pagamento de conta: fornecedor nao pode ser vazio ou nulo.");
+        this.validador.validaString(fornecedor, "Erro no pagamento de conta: fornecedor nao pode ser vazio ou nulo.");
 
         if (this.contas.containsKey(fornecedor)){
             this.contas.remove(fornecedor);
@@ -216,40 +199,11 @@ public class Cliente implements Comparable<Cliente>{
         }
     }
 
-    public String getNome() {
-        return nome;
-    }
-
     /**
-     * Metodo que define que o criterio de comparacao de clientes e o seu nome
-     * @param o - objeto do tipo cliente
-     * @return um numero maior q zero se o nome estiver primeiro em ordem alfabetica em relacao ao nome do cliente "o",
-     * um numero menor que zero, caso o nome de "o" vinher primeiro e zero caso os nomes sejam iguais.
+     * Metodo que cria um Arraylist com todas as compras desse cliente
+     * @return um ArrayList de compras, com todas as compras desse cliente
      */
-    @Override
-    public int compareTo(Cliente o) {
-        return this.nome.compareTo(o.getNome());
-    }
-
-
-
-    public String getContaPorCliente(CriterioOrdenacao criterioOrdenacao) {
-        String result = "";
-        ArrayList<String> fornecedorList = new ArrayList<String>();
-
-        for (String fornecedor : this.contas.keySet()){
-            fornecedorList.add(fornecedor);
-        }
-
-        Collections.sort(fornecedorList);
-
-        for (int i = 0; i < fornecedorList.size(); i++){
-            result += this.contas.get(fornecedorList.get(i)).getContaOrdenada(this.nome);
-        }
-        return result;
-    }
     public ArrayList<Compra> getCompras() {
-        String result = "";
         ArrayList<String> fornecedorList = new ArrayList<String>();
         ArrayList<Compra> comprasList = new ArrayList<Compra>();
 
@@ -265,6 +219,24 @@ public class Cliente implements Comparable<Cliente>{
                 comprasList.add(this.contas.get(fornecedorList.get(i)).getCompras(j));
         }
         return comprasList;
+    }
+
+    /**
+     * Compara se dois clientes tem o mesmo cpf
+     * @param o - objeto que sera usado na comparacao
+     * @return true caso os dois objetos tenham o mesmo cpf e false caso nao
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cliente cliente = (Cliente) o;
+        return cpf.equals(cliente.cpf);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cpf);
     }
 }
 

@@ -1,8 +1,6 @@
-import java.util.Objects;
-
 /**
  * Classe criada para Representar um Combo.
- * Um ProdutoUnitario tem como atributos Nome, descricao e preco. O produto usa como identificador
+ * Um combo tem como atributos Nome, descricao, precoe o fator de desconto. O produto usa como identificador
  * unico seu nome e sua descricao.
  *
  * @author Caetano Albuquerque - UFCG
@@ -32,7 +30,7 @@ public class Combo implements ProdutoInterface {
     /**
      * Objeto que tem funcoes que permite saber se as entradas sao validas
      */
-    private Validacao validadorString;
+    private Validacao validador;
 
     /**
      * Metodo que cria um combo a partir do seu nome, o preco original, a descricao e o fator de desconto
@@ -42,10 +40,10 @@ public class Combo implements ProdutoInterface {
      * @param preco - preco total d os intens que formam o combo
      */
     public Combo(String nomeCombo, String descricaoCombo, double fator, double preco) {
-        this.validadorString = new Validacao();
+        this.validador = new Validacao();
 
-        this.validadorString.validaString(nomeCombo, "Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
-        this.validadorString.validaString(descricaoCombo, "Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
+        this.validador.validaString(nomeCombo, "Erro no cadastro de produto: nome nao pode ser vazio ou nulo.");
+        this.validador.validaString(descricaoCombo, "Erro no cadastro de produto: descricao nao pode ser vazia ou nula.");
 
         if (fator < 0 || fator>1){
             throw new IllegalArgumentException("Erro no cadastro de combo: fator invalido.");
@@ -81,10 +79,20 @@ public class Combo implements ProdutoInterface {
         this.fator = fator;
     }
 
+    /**
+     * Calcula o preco do combo, que e o preco total dos produtos com o desconto determinado pelo usuario
+     * @return preco final do combo
+     */
     public double getPreco() {
         return (this.preco - (this.preco * this.fator));
     }
 
+    /**
+     * compara a partir do toString
+     * @param o - outro produto que sera comparado
+     * @return um numero negativo se esse produto for "menor" que o produto "o", um numero possitivo caso o produto "o"
+     * for maior e zero caso os dois sejam iguais
+     */
     @Override
     public int compareTo(ProdutoInterface o) {
         return this.toString().replace("+", "-").compareTo(o.toString().replace("+", "-"));

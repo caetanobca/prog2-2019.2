@@ -7,7 +7,7 @@ public class ComparadorPorNome implements java.util.Comparator<Compra> {
         if (compra.getCliente().compareTo(t1.getCliente()) == 0){
             if (compra.getFornecedor().compareTo(t1.getFornecedor()) == 0){
                 if (compra.getDescricaoProduto().compareTo(t1.getDescricaoProduto()) == 0){
-                    result = compra.getData().compareTo(t1.getData());
+                    result = ComparadorPorData.comparaData(compra.getData(), t1.getData());
                 }else{
                     result = compra.getDescricaoProduto().compareTo(t1.getDescricaoProduto());
                 }

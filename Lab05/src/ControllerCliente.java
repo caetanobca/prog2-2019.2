@@ -305,26 +305,28 @@ public class ControllerCliente {
                 compras.addAll(clienteList.get(i).getCompras());
             }
         }
-        Collections.sort(compras);
 
-        for (int i = 0; i < compras.size(); i++){
-            result += compras.get(i).getCliente() + ", " + compras.get(i).getFornecedor() + ", " +
-                    compras.get(i).getDescricaoProduto() + ", " + compras.get(i).getData();
+
+
+        if (this.criterioOrdenacao == CriterioOrdenacao.CLIENTE) {
+            Collections.sort(compras, new ComparadorPorNome());
+            for (int i = 0; i < compras.size(); i++) {
+                result += compras.get(i).getCliente() + ", " + compras.get(i).getFornecedor() + ", " +
+                        compras.get(i).getDescricaoProduto() + ", " + compras.get(i).getData() + " | ";
+            }
+        }else if (this.criterioOrdenacao == CriterioOrdenacao.FORNECEDOR){
+            Collections.sort(compras, new ComparadorPorFornecedor());
+            for (int i = 0; i < compras.size(); i++) {
+                result +=  compras.get(i).getFornecedor() + ", " + compras.get(i).getCliente() + ", " +
+                        compras.get(i).getDescricaoProduto() + ", " + compras.get(i).getData() + " | ";
+            }
+        }else if (this.criterioOrdenacao == CriterioOrdenacao.DATA){
+            Collections.sort(compras, new ComparadorPorData());
+            for (int i = 0; i < compras.size(); i++) {
+                result +=  compras.get(i).getData() + ", " +  compras.get(i).getCliente() + ", " +
+                        compras.get(i).getFornecedor() + ", " + compras.get(i).getDescricaoProduto() + " | ";
+            }
         }
-
-//        if (this.criterioOrdenacao == CriterioOrdenacao.CLIENTE){
-//            Collections.sort(clienteList);
-//
-//            for (int i = 0; i < clienteList.size(); i++){
-//                if (clienteList.get(i).existeConta()) {
-//                    compras.add(clienteList.get(i).getContaPorCliente(this.criterioOrdenacao).split(", "));
-//
-//                    result += clienteList.get(i).getContaPorCliente(this.criterioOrdenacao);
-//                }
-//            }
-//        }else if (this.criterioOrdenacao == CriterioOrdenacao.FORNECEDOR){
-//
-//        }
 
         if (!result.equals("")) {
             result = result.substring(0, result.length() - 3);

@@ -1,6 +1,20 @@
-public class ComparadorPorFornecedor implements java.util.Comparator {
+public class ComparadorPorFornecedor implements java.util.Comparator<Compra> {
     @Override
-    public int compare(Object o, Object t1) {
-        return 0;
+    public int compare(Compra compra, Compra t1) {
+        int result;
+        if (compra.getFornecedor().compareTo(t1.getFornecedor()) == 0){
+            if (compra.getCliente().compareTo(t1.getCliente()) == 0){
+                if (compra.getDescricaoProduto().compareTo(t1.getDescricaoProduto()) == 0){
+                    result = ComparadorPorData.comparaData(compra.getData(), t1.getData());
+                }else{
+                    result = compra.getDescricaoProduto().compareTo(t1.getDescricaoProduto());
+                }
+            }else {
+                result = compra.getCliente().compareTo(t1.getCliente());
+            }
+        }else {
+            result = compra.getFornecedor().compareTo(t1.getFornecedor());
+        }
+        return result;
     }
 }
