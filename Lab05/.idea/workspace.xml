@@ -1,133 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a949bfdd-df67-43a3-af49-dab1fa25f771" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Cliente/ControllerCliente.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Cliente/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Cliente/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Comparador/ComparadorPorData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Comparador/ComparadorPorFornecedor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Comparador/ComparadorPorNome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Comparador/CriterioOrdenacao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Comparador/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Comparador/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Compra/Conta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Compra/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Fornecedor/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Produto/Combo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Produto/ProdutoInterface.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Produto/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Produto/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SAGA/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-15.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/overview-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/META-INF/Lab05.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Cliente/Cliente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Cliente/ControllerCliente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Comparador/ComparadorPorData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Comparador/ComparadorPorFornecedor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Comparador/ComparadorPorNome.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Comparador/CriterioOrdenacao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Compra/Compra.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Compra/Conta.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Facade.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Fornecedor/ControllerFornecedor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Fornecedor/Fornecedor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Produto/Combo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Produto/ProdutoInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Produto/ProdutoUnitario.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab05/SAGA/Validacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcceptTests/use_case_5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptTests/use_case_5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcceptTests/use_case_6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptTests/use_case_6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcceptTests/use_case_8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptTests/use_case_8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Cliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Cliente/Cliente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/ControllerCliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Compra/Compra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/ControllerFornecedor.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Fornecedor/ControllerFornecedor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Facade.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Facade.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Fornecedor.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Fornecedor/Fornecedor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Produto.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Produto/ProdutoUnitario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Validacao.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Validacao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allclasses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/element-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/member-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/package-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Fornecedor/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SAGA/Compra/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/type-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ClienteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ControllerClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ControllerClienteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ControllerFornecedorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ControllerFornecedorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/FornecedorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/FornecedorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ProdutoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Combo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ComparadorPorData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ComparadorPorFornecedor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ComparadorPorNome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Compra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Conta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ControllerCliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ControllerFornecedor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/CriterioOrdenacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Facade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Fornecedor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ProdutoInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/ProdutoUnitario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/TipoProduto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Validacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab05/ClienteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab05/ClienteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab05/ControllerClienteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab05/ControllerClienteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab05/ControllerFornecedorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab05/ControllerFornecedorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab05/FornecedorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab05/FornecedorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab05/ProdutoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab05/ProdutoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Cliente/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Combo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Produto/Combo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComparadorPorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Comparador/ComparadorPorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComparadorPorFornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Comparador/ComparadorPorFornecedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComparadorPorNome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Comparador/ComparadorPorNome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Compra/Compra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Compra/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControllerCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Cliente/ControllerCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControllerFornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Fornecedor/ControllerFornecedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CriterioOrdenacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Comparador/CriterioOrdenacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Fornecedor/Fornecedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProdutoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Produto/ProdutoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProdutoUnitario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Produto/ProdutoUnitario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TipoProduto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAGA/Validacao.java" afterDir="false" />
-    </list>
+    <list default="true" id="a949bfdd-df67-43a3-af49-dab1fa25f771" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SAGA/Produto/Combo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="187">
               <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="docComment;field#nome#0;class#Combo#0" />
@@ -181,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SAGA/Compra/Compra.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="187">
               <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="docComment;field#nomeProduto#0;class#Compra#0" />
@@ -204,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SAGA/Compra/Conta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="238">
               <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -231,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/ClienteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="73">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="method#setNome#0;class#ClienteTest#0" />
                 <element signature="method#setNomeNull#0;class#ClienteTest#0" />
@@ -254,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SAGA/Fornecedor/ControllerFornecedor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
+            <state relative-caret-position="272">
               <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -300,7 +174,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SAGA/Fornecedor/Fornecedor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="187">
               <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="docComment;field#nome#0;class#Fornecedor#0" />
@@ -345,7 +219,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SAGA/Produto/ProdutoUnitario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="187">
               <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="docComment;field#descricao#0;class#ProdutoUnitario#0" />
@@ -376,7 +250,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SAGA/Comparador/ComparadorPorNome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
+            <state relative-caret-position="153">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="docComment;method#compare#0;class#ComparadorPorNome#0" />
@@ -539,6 +413,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
           <expand>
@@ -555,7 +430,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -653,14 +527,12 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ClienteTest.cadastrarCompraNull" />
       <item itemvalue="JUnit.ClienteTest.cadastrarCompraVazia" />
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="JUnit.ClienteTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ClienteTest" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.ClienteTest.cadastrarCompraVazia" />
         <item itemvalue="JUnit.ClienteTest.cadastrarCompraNull" />
       </list>
@@ -722,9 +594,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49462366" visible="true" weight="0.14089069" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49462366" visible="true" weight="0.14089069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -937,13 +808,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TipoProduto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TipoProduto.java" />
     <entry file="file://$PROJECT_DIR$/AcceptTests/use_case_8.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-387">
@@ -1136,12 +1001,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SAGA/Comparador/ComparadorPorNome.java">
+    <entry file="file://$PROJECT_DIR$/src/SAGA/Produto/Combo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="docComment;method#compare#0;class#ComparadorPorNome#0" />
+            <element signature="docComment;field#nome#0;class#Combo#0" />
+            <element signature="docComment;field#descricao#0;class#Combo#0" />
+            <element signature="docComment;field#preco#0;class#Combo#0" />
+            <element signature="docComment;field#fator#0;class#Combo#0" />
+            <element signature="docComment;method#Combo#0;class#Combo#0" />
+            <element signature="method#Combo#0;class#Combo#0" />
+            <element signature="docComment;method#toString#0;class#Combo#0" />
+            <element signature="method#toString#0;class#Combo#0" />
+            <element signature="docComment;method#editarProduto#0;class#Combo#0" />
+            <element signature="method#editarProduto#0;class#Combo#0" />
+            <element signature="docComment;method#getPreco#0;class#Combo#0" />
+            <element signature="docComment;method#compareTo#0;class#Combo#0" />
+            <element signature="method#compareTo#0;class#Combo#0" />
           </folding>
         </state>
       </provider>
@@ -1153,9 +1030,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SAGA/Compra/Compra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;field#nomeProduto#0;class#Compra#0" />
+            <element signature="docComment;field#descricaoProduto#0;class#Compra#0" />
+            <element signature="docComment;field#data#0;class#Compra#0" />
+            <element signature="docComment;field#cliente#0;class#Compra#0" />
+            <element signature="docComment;field#fornecedor#0;class#Compra#0" />
+            <element signature="docComment;method#Compra#0;class#Compra#0" />
+            <element signature="method#Compra#0;class#Compra#0" />
+            <element signature="docComment;method#getDescricaoProduto#0;class#Compra#0" />
+            <element signature="docComment;method#getData#0;class#Compra#0" />
+            <element signature="docComment;method#getCliente#0;class#Compra#0" />
+            <element signature="docComment;method#getFornecedor#0;class#Compra#0" />
+            <element signature="docComment;method#toString#0;class#Compra#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SAGA/Compra/Conta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#fornecedor#0;class#Conta#0" />
+            <element signature="docComment;field#debito#0;class#Conta#0" />
+            <element signature="docComment;field#compras#0;class#Conta#0" />
+            <element signature="docComment;field#validador#0;class#Conta#0" />
+            <element signature="docComment;method#Conta#0;class#Conta#0" />
+            <element signature="method#Conta#0;class#Conta#0" />
+            <element signature="docComment;method#adicionaProduto#0;class#Conta#0" />
+            <element signature="method#adicionaProduto#0;class#Conta#0" />
+            <element signature="docComment;method#getDebito#0;class#Conta#0" />
+            <element signature="docComment;method#getCompras#0;class#Conta#0" />
+            <element signature="docComment;method#getNumCompras#0;class#Conta#0" />
+            <element signature="docComment;method#toString#0;class#Conta#0" />
+            <element signature="method#toString#0;class#Conta#0" />
+            <element signature="docComment;method#equals#0;class#Conta#0" />
+            <element signature="method#equals#0;class#Conta#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SAGA/Fornecedor/ControllerFornecedor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
+        <state relative-caret-position="272">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1199,7 +1122,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SAGA/Fornecedor/Fornecedor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="187">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="docComment;field#nome#0;class#Fornecedor#0" />
@@ -1242,7 +1165,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SAGA/Produto/ProdutoUnitario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="187">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="docComment;field#descricao#0;class#ProdutoUnitario#0" />
@@ -1267,78 +1190,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SAGA/Produto/Combo.java">
+    <entry file="file://$PROJECT_DIR$/src/SAGA/Comparador/ComparadorPorNome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="docComment;field#nome#0;class#Combo#0" />
-            <element signature="docComment;field#descricao#0;class#Combo#0" />
-            <element signature="docComment;field#preco#0;class#Combo#0" />
-            <element signature="docComment;field#fator#0;class#Combo#0" />
-            <element signature="docComment;method#Combo#0;class#Combo#0" />
-            <element signature="method#Combo#0;class#Combo#0" />
-            <element signature="docComment;method#toString#0;class#Combo#0" />
-            <element signature="method#toString#0;class#Combo#0" />
-            <element signature="docComment;method#editarProduto#0;class#Combo#0" />
-            <element signature="method#editarProduto#0;class#Combo#0" />
-            <element signature="docComment;method#getPreco#0;class#Combo#0" />
-            <element signature="docComment;method#compareTo#0;class#Combo#0" />
-            <element signature="method#compareTo#0;class#Combo#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SAGA/Compra/Compra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;field#nomeProduto#0;class#Compra#0" />
-            <element signature="docComment;field#descricaoProduto#0;class#Compra#0" />
-            <element signature="docComment;field#data#0;class#Compra#0" />
-            <element signature="docComment;field#cliente#0;class#Compra#0" />
-            <element signature="docComment;field#fornecedor#0;class#Compra#0" />
-            <element signature="docComment;method#Compra#0;class#Compra#0" />
-            <element signature="method#Compra#0;class#Compra#0" />
-            <element signature="docComment;method#getDescricaoProduto#0;class#Compra#0" />
-            <element signature="docComment;method#getData#0;class#Compra#0" />
-            <element signature="docComment;method#getCliente#0;class#Compra#0" />
-            <element signature="docComment;method#getFornecedor#0;class#Compra#0" />
-            <element signature="docComment;method#toString#0;class#Compra#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SAGA/Compra/Conta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;field#fornecedor#0;class#Conta#0" />
-            <element signature="docComment;field#debito#0;class#Conta#0" />
-            <element signature="docComment;field#compras#0;class#Conta#0" />
-            <element signature="docComment;field#validador#0;class#Conta#0" />
-            <element signature="docComment;method#Conta#0;class#Conta#0" />
-            <element signature="method#Conta#0;class#Conta#0" />
-            <element signature="docComment;method#adicionaProduto#0;class#Conta#0" />
-            <element signature="method#adicionaProduto#0;class#Conta#0" />
-            <element signature="docComment;method#getDebito#0;class#Conta#0" />
-            <element signature="docComment;method#getCompras#0;class#Conta#0" />
-            <element signature="docComment;method#getNumCompras#0;class#Conta#0" />
-            <element signature="docComment;method#toString#0;class#Conta#0" />
-            <element signature="method#toString#0;class#Conta#0" />
-            <element signature="docComment;method#equals#0;class#Conta#0" />
-            <element signature="method#equals#0;class#Conta#0" />
+            <element signature="docComment;method#compare#0;class#ComparadorPorNome#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/ClienteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="73">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="method#setNome#0;class#ClienteTest#0" />
             <element signature="method#setNomeNull#0;class#ClienteTest#0" />
