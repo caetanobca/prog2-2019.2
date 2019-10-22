@@ -68,6 +68,7 @@ public class Conta {
             result += nomeCliente + ", " + this.fornecedor + ", "
                     + this.compras.get(i).getDescricaoProduto() + ", " + this.compras.get(i).getData() + " | ";
         }
+
         return result;
     }
 }

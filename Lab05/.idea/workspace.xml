@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a949bfdd-df67-43a3-af49-dab1fa25f771" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Compra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CriterioOrdenacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ordena.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab05/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/Conta.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab05/ControllerCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05/ControllerCliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Combo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Combo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ControllerCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControllerCliente.java" afterDir="false" />
     </list>
@@ -30,104 +30,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ControllerCliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="286" column="103" selection-start-line="286" selection-start-column="103" selection-end-line="286" selection-end-column="103" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#ControllerCliente#0" />
-                <element signature="docComment;field#clientes#0;class#ControllerCliente#0" />
-                <element signature="docComment;field#validadorString#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#ControllerCliente#0;class#ControllerCliente#0" />
-                <element signature="method#ControllerCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#cadastraCliente#0;class#ControllerCliente#0" />
-                <element signature="method#cadastraCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#exibeCliente#0;class#ControllerCliente#0" />
-                <element signature="method#exibeCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#listarClientes#0;class#ControllerCliente#0" />
-                <element signature="method#listarClientes#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#editarCliente#0;class#ControllerCliente#0" />
-                <element signature="method#editarCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#removerCliente#0;class#ControllerCliente#0" />
-                <element signature="method#removerCliente#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#cadastraCompra#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#getDebito#0;class#ControllerCliente#0" />
-                <element signature="method#getDebito#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#getContaEmFornecedor#0;class#ControllerCliente#0" />
-                <element signature="method#getContaEmFornecedor#0;class#ControllerCliente#0" />
-                <element signature="docComment;method#contaCliente#0;class#ControllerCliente#0" />
-                <element signature="method#contaCliente#0;class#ControllerCliente#0" />
-                <element signature="method#realizaPagamento#0;class#ControllerCliente#0" />
-                <element signature="method#ordenaPor#0;class#ControllerCliente#0" />
-                <element signature="e#12993#13002#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#Cliente#0" />
-                <element signature="docComment;field#cpf#0;class#Cliente#0" />
-                <element signature="docComment;field#nome#0;class#Cliente#0" />
-                <element signature="docComment;field#email#0;class#Cliente#0" />
-                <element signature="docComment;field#localizacao#0;class#Cliente#0" />
-                <element signature="docComment;field#validadorString#0;class#Cliente#0" />
-                <element signature="docComment;field#contas#0;class#Cliente#0" />
-                <element signature="docComment;method#Cliente#0;class#Cliente#0" />
-                <element signature="method#Cliente#0;class#Cliente#0" />
-                <element signature="docComment;method#toString#0;class#Cliente#0" />
-                <element signature="docComment;method#setNome#0;class#Cliente#0" />
-                <element signature="method#setNome#0;class#Cliente#0" />
-                <element signature="docComment;method#setEmail#0;class#Cliente#0" />
-                <element signature="method#setEmail#0;class#Cliente#0" />
-                <element signature="docComment;method#setLocalizacao#0;class#Cliente#0" />
-                <element signature="method#setLocalizacao#0;class#Cliente#0" />
-                <element signature="docComment;method#cadastrarCompra#0;class#Cliente#0" />
-                <element signature="method#cadastrarCompra#0;class#Cliente#0" />
-                <element signature="docComment;method#getDebito#0;class#Cliente#0" />
-                <element signature="method#getDebito#0;class#Cliente#0" />
-                <element signature="docComment;method#getContaEmfornecedor#0;class#Cliente#0" />
-                <element signature="method#getContaEmfornecedor#0;class#Cliente#0" />
-                <element signature="docComment;method#getConta#0;class#Cliente#0" />
-                <element signature="method#getConta#0;class#Cliente#0" />
-                <element signature="docComment;method#equals#0;class#Cliente#0" />
-                <element signature="method#equals#0;class#Cliente#0" />
-                <element signature="method#realizaPagamento#0;class#Cliente#0" />
-                <element signature="e#7865#7866#0" expanded="true" />
-                <element signature="e#7928#7929#0" expanded="true" />
-                <element signature="e#8047#8055#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Conta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Conta#0;class#Conta#0" />
-                <element signature="method#toString#0;class#Conta#0" />
-                <element signature="method#equals#0;class#Conta#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Compra.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="255">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="e#983#984#0" expanded="true" />
                 <element signature="e#1062#1063#0" expanded="true" />
@@ -142,8 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -184,7 +90,6 @@
         <option value="$PROJECT_DIR$/Tests/ControllerClienteTest.java" />
         <option value="$PROJECT_DIR$/Tests/ControllerFornecedorTest.java" />
         <option value="$PROJECT_DIR$/src/ProdutoInterface.java" />
-        <option value="$PROJECT_DIR$/src/Combo.java" />
         <option value="$PROJECT_DIR$/src/ProdutoUnitario.java" />
         <option value="$PROJECT_DIR$/src/TipoProduto.java" />
         <option value="$PROJECT_DIR$/src/Fornecedor.java" />
@@ -193,11 +98,13 @@
         <option value="$PROJECT_DIR$/src/Validacao.java" />
         <option value="$PROJECT_DIR$/src/Compras.java" />
         <option value="$PROJECT_DIR$/src/CriterioOrdenacao.java" />
-        <option value="$PROJECT_DIR$/src/Compra.java" />
         <option value="$PROJECT_DIR$/AcceptTests/use_case_8.txt" />
         <option value="$PROJECT_DIR$/src/Conta.java" />
-        <option value="$PROJECT_DIR$/src/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/Ordena.java" />
         <option value="$PROJECT_DIR$/src/ControllerCliente.java" />
+        <option value="$PROJECT_DIR$/src/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/Combo.java" />
+        <option value="$PROJECT_DIR$/src/Compra.java" />
       </list>
     </option>
   </component>
@@ -227,7 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,6 +180,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,7 +344,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49759614" visible="true" weight="0.13522267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49759614" visible="true" weight="0.13765182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -446,7 +353,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50240386" side_tool="true" weight="0.13522267" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26110125" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26110125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -522,6 +429,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -750,23 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Combo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
-          <folding>
-            <element signature="docComment;class#Combo#0" />
-            <element signature="docComment;field#nome#0;class#Combo#0" />
-            <element signature="docComment;field#descricao#0;class#Combo#0" />
-            <element signature="docComment;field#preco#0;class#Combo#0" />
-            <element signature="docComment;field#fator#0;class#Combo#0" />
-            <element signature="method#Combo#0;class#Combo#0" />
-            <element signature="docComment;method#toString#0;class#Combo#0" />
-            <element signature="method#editarProduto#0;class#Combo#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TipoProduto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -806,10 +710,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ControllerCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="279" column="4" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#ControllerCliente#0" />
+            <element signature="docComment;field#clientes#0;class#ControllerCliente#0" />
+            <element signature="docComment;field#validadorString#0;class#ControllerCliente#0" />
+            <element signature="docComment;field#controllerFornecedor#0;class#ControllerCliente#0" />
+            <element signature="docComment;field#criterioOrdenacao#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#ControllerCliente#0;class#ControllerCliente#0" />
+            <element signature="method#ControllerCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#cadastraCliente#0;class#ControllerCliente#0" />
+            <element signature="method#cadastraCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#exibeCliente#0;class#ControllerCliente#0" />
+            <element signature="method#exibeCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#listarClientes#0;class#ControllerCliente#0" />
+            <element signature="method#listarClientes#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#editarCliente#0;class#ControllerCliente#0" />
+            <element signature="method#editarCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#removerCliente#0;class#ControllerCliente#0" />
+            <element signature="method#removerCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#cadastraCompra#0;class#ControllerCliente#0" />
+            <element signature="method#cadastraCompra#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#getDebito#0;class#ControllerCliente#0" />
+            <element signature="method#getDebito#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#getContaEmFornecedor#0;class#ControllerCliente#0" />
+            <element signature="method#getContaEmFornecedor#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#contaCliente#0;class#ControllerCliente#0" />
+            <element signature="method#contaCliente#0;class#ControllerCliente#0" />
+            <element signature="docComment;method#realizaPagamento#0;class#ControllerCliente#0" />
+            <element signature="method#realizaPagamento#0;class#ControllerCliente#0" />
+            <element signature="method#ordenaPor#0;class#ControllerCliente#0" />
+            <element signature="method#listarCompras#0;class#ControllerCliente#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ordena.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Conta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        <state relative-caret-position="229">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Conta#0;class#Conta#0" />
@@ -821,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
+        <state relative-caret-position="198">
+          <caret line="234" column="4" selection-start-line="234" selection-start-column="4" selection-end-line="234" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Cliente#0" />
@@ -851,56 +802,45 @@
             <element signature="method#getConta#0;class#Cliente#0" />
             <element signature="docComment;method#equals#0;class#Cliente#0" />
             <element signature="method#equals#0;class#Cliente#0" />
+            <element signature="docComment;method#realizaPagamento#0;class#Cliente#0" />
             <element signature="method#realizaPagamento#0;class#Cliente#0" />
-            <element signature="e#7865#7866#0" expanded="true" />
-            <element signature="e#7928#7929#0" expanded="true" />
-            <element signature="e#8047#8055#0" expanded="true" />
+            <element signature="docComment;method#existeConta#0;class#Cliente#0" />
+            <element signature="method#existeConta#0;class#Cliente#0" />
+            <element signature="docComment;method#compareTo#0;class#Cliente#0" />
+            <element signature="method#getContaPorCliente#0;class#Cliente#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Combo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="docComment;class#Combo#0" />
+            <element signature="docComment;field#nome#0;class#Combo#0" />
+            <element signature="docComment;field#descricao#0;class#Combo#0" />
+            <element signature="docComment;field#preco#0;class#Combo#0" />
+            <element signature="docComment;field#fator#0;class#Combo#0" />
+            <element signature="docComment;field#validadorString#0;class#Combo#0" />
+            <element signature="docComment;method#Combo#0;class#Combo#0" />
+            <element signature="method#Combo#0;class#Combo#0" />
+            <element signature="docComment;method#toString#0;class#Combo#0" />
+            <element signature="method#toString#0;class#Combo#0" />
+            <element signature="docComment;method#editarProduto#0;class#Combo#0" />
+            <element signature="method#editarProduto#0;class#Combo#0" />
+            <element signature="method#compareTo#0;class#Combo#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Compra.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="255">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="e#983#984#0" expanded="true" />
             <element signature="e#1062#1063#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ControllerCliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="286" column="103" selection-start-line="286" selection-start-column="103" selection-end-line="286" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#ControllerCliente#0" />
-            <element signature="docComment;field#clientes#0;class#ControllerCliente#0" />
-            <element signature="docComment;field#validadorString#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#ControllerCliente#0;class#ControllerCliente#0" />
-            <element signature="method#ControllerCliente#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#cadastraCliente#0;class#ControllerCliente#0" />
-            <element signature="method#cadastraCliente#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#exibeCliente#0;class#ControllerCliente#0" />
-            <element signature="method#exibeCliente#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#listarClientes#0;class#ControllerCliente#0" />
-            <element signature="method#listarClientes#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#editarCliente#0;class#ControllerCliente#0" />
-            <element signature="method#editarCliente#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#removerCliente#0;class#ControllerCliente#0" />
-            <element signature="method#removerCliente#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#cadastraCompra#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#getDebito#0;class#ControllerCliente#0" />
-            <element signature="method#getDebito#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#getContaEmFornecedor#0;class#ControllerCliente#0" />
-            <element signature="method#getContaEmFornecedor#0;class#ControllerCliente#0" />
-            <element signature="docComment;method#contaCliente#0;class#ControllerCliente#0" />
-            <element signature="method#contaCliente#0;class#ControllerCliente#0" />
-            <element signature="method#realizaPagamento#0;class#ControllerCliente#0" />
-            <element signature="method#ordenaPor#0;class#ControllerCliente#0" />
-            <element signature="e#12993#13002#0" expanded="true" />
           </folding>
         </state>
       </provider>

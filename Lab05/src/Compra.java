@@ -24,7 +24,6 @@ public class Compra implements Comparable<Compra> {
     public int compareTo(Compra o) {
         return this.descricaoProduto.compareTo(o.getDescricaoProduto());
     }
-
     public String getDescricaoProduto() {
         return descricaoProduto;
     }

@@ -190,6 +190,10 @@ public class Cliente implements Comparable<Cliente>{
         return Objects.hash(cpf);
     }
 
+    /**
+     * metodo que realiza o pagamento de todos os debitos que o cliente tem em um deterrminado fornecedor
+     * @param fornecedor - nome do fornecedor que sera pago
+     */
     public void realizaPagamento(String fornecedor) {
         this.validadorString.validaString(fornecedor, "Erro no pagamento de conta: fornecedor nao pode ser vazio ou nulo.");
 
@@ -200,6 +204,10 @@ public class Cliente implements Comparable<Cliente>{
         }
     }
 
+    /**
+     * Verifica se existe conta cadastrada em determinado cliente
+     * @return True caso o cliente possua alguma conta e false caso nao
+     */
     public boolean existeConta() {
         if (this.contas.isEmpty()){
             return false;
@@ -212,10 +220,18 @@ public class Cliente implements Comparable<Cliente>{
         return nome;
     }
 
+    /**
+     * Metodo que define que o criterio de comparacao de clientes e o seu nome
+     * @param o - objeto do tipo cliente
+     * @return um numero maior q zero se o nome estiver primeiro em ordem alfabetica em relacao ao nome do cliente "o",
+     * um numero menor que zero, caso o nome de "o" vinher primeiro e zero caso os nomes sejam iguais.
+     */
     @Override
     public int compareTo(Cliente o) {
         return this.nome.compareTo(o.getNome());
     }
+
+
 
     public String getContaPorCliente(CriterioOrdenacao criterioOrdenacao) {
         String result = "";

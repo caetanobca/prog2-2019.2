@@ -21,9 +21,25 @@ public class ControllerCliente {
      */
     private Validacao validadorString;
 
+    /**
+     * Objeto adicionado para fazer com que o controller cliente tenha acesso aos dados do controllerFornecedor
+     */
     private ControllerFornecedor controllerFornecedor;
 
+    /**
+     * Enum que define os tipos de ordenacao para exibir as compraa
+     */
     private CriterioOrdenacao criterioOrdenacao;
+
+
+
+
+    private Ordena ordena;
+
+
+
+
+
 
     /**
      * Inicializa o ControllerFornecedor
@@ -33,6 +49,7 @@ public class ControllerCliente {
         this.validadorString = new Validacao();
         this.controllerFornecedor = controllerFornecedor;
         this.criterioOrdenacao = CriterioOrdenacao.NAODEFINIDO;
+        this.ordena = new Ordena();
     }
 
     /**
@@ -239,6 +256,11 @@ public class ControllerCliente {
         return this.clientes.get(cpf).getConta();
     }
 
+    /**
+     * Metodo que realiza o pagamento TOTAL da conta do cliente em determinado fornecedor
+     * @param cpf - cpf do cliente
+     * @param fornecedor - nome do fornecedor que sera pago
+     */
     public void realizaPagamento(String cpf, String fornecedor) {
         this.validadorString.validaString(cpf, "Erro no pagamento de conta: cpf nao pode ser vazio ou nulo.");
         this.validadorString.validaString(fornecedor, "Erro no pagamento de conta: fornecedor nao pode ser vazio ou nulo.");
@@ -252,6 +274,7 @@ public class ControllerCliente {
 
         this.clientes.get(cpf).realizaPagamento(fornecedor);
     }
+
 
 
 
@@ -287,6 +310,15 @@ public class ControllerCliente {
                 compras.add(clienteList.get(i).getContaPorCliente(this.criterioOrdenacao).split(", "));
             }
         }
+
+//        if (this.criterioOrdenacao == CriterioOrdenacao.CLIENTE){
+//            this.ordena.ordenaPorCliente(compras);
+//        }else if (this.criterioOrdenacao == CriterioOrdenacao.FORNECEDOR){
+//            this.ordena.ordenaPorFornecedor(compras);
+//        }else if (this.criterioOrdenacao == CriterioOrdenacao.DATA){
+//            this.ordena.ordenaPorData(compras);
+//        }
+
 
 //        if (this.criterioOrdenacao == CriterioOrdenacao.CLIENTE){
 //            Collections.sort(clienteList);

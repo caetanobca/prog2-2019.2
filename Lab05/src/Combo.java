@@ -34,7 +34,13 @@ public class Combo implements ProdutoInterface {
      */
     private Validacao validadorString;
 
-
+    /**
+     * Metodo que cria um combo a partir do seu nome, o preco original, a descricao e o fator de desconto
+     * @param nomeCombo - nome do combo
+     * @param descricaoCombo - descricao do combo
+     * @param fator - fator de desconto sobre o preco total dos itens
+     * @param preco - preco total d os intens que formam o combo
+     */
     public Combo(String nomeCombo, String descricaoCombo, double fator, double preco) {
         this.validadorString = new Validacao();
 
@@ -64,6 +70,10 @@ public class Combo implements ProdutoInterface {
         return this.nome + " - " + this.descricao + " - R$" + String.format("%.2f",precoComDesconto);
     }
 
+    /**
+     * Metodo que edita o fator de desconto do produto
+     * @param fator
+     */
     public void editarProduto(double fator) {
         if (fator < 0 || fator > 1){
             throw new IllegalArgumentException("fator invalido.");
