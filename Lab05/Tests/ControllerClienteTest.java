@@ -1,3 +1,5 @@
+import SAGA.Cliente.ControllerCliente;
+import SAGA.Fornecedor.ControllerFornecedor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

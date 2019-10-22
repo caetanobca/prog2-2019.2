@@ -1,3 +1,4 @@
+import SAGA.Cliente.Cliente;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -91,6 +92,39 @@ class ClienteTest {
     }
 
     @Test
+    void cadastrarCompraNull() {
+        assertThrows(NullPointerException.class, () -> {
+            this.cliente.cadastrarCompra(null, "14/11/2018", "Bala", "bala de menta", 0.10);
+        });
+        assertThrows(NullPointerException.class, () -> {
+            this.cliente.cadastrarCompra("Dona Ines", null, "Bala", "bala de menta", 0.10);
+        });
+        assertThrows(NullPointerException.class, () -> {
+            this.cliente.cadastrarCompra("Dona Ines", "14/11/2018", null, "bala de menta", 0.10);
+        });
+        assertThrows(NullPointerException.class, () -> {
+            this.cliente.cadastrarCompra("Dona Ines", "14/11/2018", "Bala", null, 0.10);
+        });
+    }
+
+    @Test
+    void cadastrarCompraVazia() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.cliente.cadastrarCompra("", "14/11/2018", "Bala", "bala de menta", 0.10);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.cliente.cadastrarCompra("Dona Ines", "", "Bala", "bala de menta", 0.10);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.cliente.cadastrarCompra("Dona Ines", "14/11/2018", "", "bala de menta", 0.10);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            this.cliente.cadastrarCompra("Dona Ines", "14/11/2018", "Bala", "", 0.10);
+        });
+    }
+
+
+    @Test
     void getDebito() {
     }
 
@@ -101,4 +135,18 @@ class ClienteTest {
     @Test
     void getConta() {
     }
+
+    @Test
+    void realizaPagamento() {
+    }
+
+    @Test
+    void existeConta() {
+    }
+
+    @Test
+    void getCompras() {
+    }
+
+
 }

@@ -42,7 +42,7 @@ Zana, Severo, Cocada de doce de leite com pedacos de amendoim, 05/11/2018" lista
 
 ## Listando compras ordenadas por fornecedor em ordem alfabética crescente. ##
 
-ordenaPor criterio="Fornecedor" 
+ordenaPor criterio="Fornecedor"
 
 expect "Dona Alba, Lucio Correia, Feijao com arroz e queijo coalho, 11/11/2011 | Joabe, Dalton, Um Bolo e uma Trufa, 06/11/2018 | \
 Joabe, Joao Neto, Bolo de trigo com cobertura de chocolate, 08/11/2018 | Joabe, Joao Neto, Doce sabor beijinho, 07/11/2018 | \

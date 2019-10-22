@@ -1,1 +1,6 @@
-unnamed package
+SAGA
+SAGA.Cliente
+SAGA.Comparador
+SAGA.Compra
+SAGA.Fornecedor
+SAGA.Produto
