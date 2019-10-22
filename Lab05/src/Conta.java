@@ -12,7 +12,7 @@ public class Conta {
 
     private Validacao validadorString;
 
-    public Conta(String fornecedor, String data, String nomeproduto, String descricaoProduto, double preco){
+    public Conta(String fornecedor, String data, String nomeproduto, String descricaoProduto, double preco, String cliente){
         this.validadorString = new Validacao();
         this.validadorString.validaString(fornecedor, "Erro ao cadastrar compra: fornecedor nao pode ser vazio ou nulo.");
         this.validadorString.validaString(data, "Erro ao cadastrar compra: data nao pode ser vazia ou nula.");
@@ -21,16 +21,16 @@ public class Conta {
         this.fornecedor = fornecedor;
         this.debito = 0;
         this.compras = new ArrayList<Compra>();
-        this.adicionaProduto(nomeproduto, descricaoProduto, data, preco);
+        this.adicionaProduto(nomeproduto, descricaoProduto, data, preco, cliente);
     }
 
-    public void adicionaProduto(String nomeproduto, String descricaoProduto, String data, double preco) {
+    public void adicionaProduto(String nomeproduto, String descricaoProduto, String data, double preco, String cliente) {
         this.validadorString.validaString(data, "Erro ao cadastrar compra: data nao pode ser vazia ou nula.");
         this.validadorString.validaString(nomeproduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
         this.validadorString.validaString(descricaoProduto,"Erro ao cadastrar compra: descricao do produto nao pode ser vazia ou nula");
         this.debito += preco;
 
-        this.compras.add(new Compra(nomeproduto, descricaoProduto, data));
+        this.compras.add(new Compra(nomeproduto, descricaoProduto, data, cliente, this.fornecedor));
     }
 
     public String getDebito() {
@@ -70,5 +70,14 @@ public class Conta {
         }
 
         return result;
+    }
+
+    public Compra getCompras(int index) {
+        return this.compras.get(index);
+
+    }
+
+    public int getNumCompras() {
+        return compras.size();
     }
 }

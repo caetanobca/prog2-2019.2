@@ -111,9 +111,9 @@ public class Cliente implements Comparable<Cliente>{
         this.validadorString.validaString(data, "Erro ao cadastrar compra: data nao pode ser vazia ou nula.");
         this.validadorString.validaString(nomeProduto, "Erro ao cadastrar compra: nome do produto nao pode ser vazio ou nulo.");
         if (this.contas.containsKey(fornecedor)) {
-            this.contas.get(fornecedor).adicionaProduto(nomeProduto, descricaoProduto , data, preco);
+            this.contas.get(fornecedor).adicionaProduto(nomeProduto, descricaoProduto , data, preco, this.nome);
         } else {
-            this.contas.put(fornecedor, new Conta(fornecedor, data, nomeProduto, descricaoProduto, preco));
+            this.contas.put(fornecedor, new Conta(fornecedor, data, nomeProduto, descricaoProduto, preco, this.nome));
         }
     }
 
@@ -247,6 +247,24 @@ public class Cliente implements Comparable<Cliente>{
             result += this.contas.get(fornecedorList.get(i)).getContaOrdenada(this.nome);
         }
         return result;
+    }
+    public ArrayList<Compra> getCompras() {
+        String result = "";
+        ArrayList<String> fornecedorList = new ArrayList<String>();
+        ArrayList<Compra> comprasList = new ArrayList<Compra>();
+
+
+        for (String fornecedor : this.contas.keySet()){
+            fornecedorList.add(fornecedor);
+        }
+
+        Collections.sort(fornecedorList);
+
+        for (int i = 0; i < fornecedorList.size(); i++){
+            for (int j = 0; j < this.contas.get(fornecedorList.get(i)).getNumCompras(); j++)
+                comprasList.add(this.contas.get(fornecedorList.get(i)).getCompras(j));
+        }
+        return comprasList;
     }
 }
 

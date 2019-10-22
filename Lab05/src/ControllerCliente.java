@@ -34,11 +34,6 @@ public class ControllerCliente {
 
 
 
-    private Ordena ordena;
-
-
-
-
 
 
     /**
@@ -49,7 +44,7 @@ public class ControllerCliente {
         this.validadorString = new Validacao();
         this.controllerFornecedor = controllerFornecedor;
         this.criterioOrdenacao = CriterioOrdenacao.NAODEFINIDO;
-        this.ordena = new Ordena();
+
     }
 
     /**
@@ -296,7 +291,7 @@ public class ControllerCliente {
         if (this.criterioOrdenacao == CriterioOrdenacao.NAODEFINIDO){
             throw new IllegalArgumentException("Erro na listagem de compras: criterio ainda nao definido pelo sistema.");
         }
-        ArrayList<String[]> compras= new ArrayList<>();
+        ArrayList<Compra> compras= new ArrayList<Compra>();
 
         String result = "";
         ArrayList<Cliente> clienteList = new ArrayList<Cliente>();
@@ -307,18 +302,15 @@ public class ControllerCliente {
 
         for (int i = 0; i < clienteList.size(); i++){
             if (clienteList.get(i).existeConta()) {
-                compras.add(clienteList.get(i).getContaPorCliente(this.criterioOrdenacao).split(", "));
+                compras.addAll(clienteList.get(i).getCompras());
             }
         }
+        Collections.sort(compras);
 
-//        if (this.criterioOrdenacao == CriterioOrdenacao.CLIENTE){
-//            this.ordena.ordenaPorCliente(compras);
-//        }else if (this.criterioOrdenacao == CriterioOrdenacao.FORNECEDOR){
-//            this.ordena.ordenaPorFornecedor(compras);
-//        }else if (this.criterioOrdenacao == CriterioOrdenacao.DATA){
-//            this.ordena.ordenaPorData(compras);
-//        }
-
+        for (int i = 0; i < compras.size(); i++){
+            result += compras.get(i).getCliente() + ", " + compras.get(i).getFornecedor() + ", " +
+                    compras.get(i).getDescricaoProduto() + ", " + compras.get(i).getData();
+        }
 
 //        if (this.criterioOrdenacao == CriterioOrdenacao.CLIENTE){
 //            Collections.sort(clienteList);
